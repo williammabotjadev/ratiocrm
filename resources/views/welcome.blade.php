@@ -37,7 +37,8 @@
                     <a href="" class="btn btn-body">Find out More</a>
             </div>
             <div class="w-50 mt-lg-5 ml-lg-5 d-flex justify-content-center align-items-center">
-                    <form action="" class="form-group w-75 home-form">
+                    <form action="{{ route('register') }}" class="form-group w-75 home-form">
+                        @csrf
                         <fieldset>
                         <legend class="form-title-text">Create an Account</legend>
                         <br>
