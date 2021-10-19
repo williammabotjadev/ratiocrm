@@ -11,11 +11,14 @@
 
         <!-- App Icons -->
         <link rel="icon shortcut-icon" href="{{ asset('img/icon.png') }}">
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
        
     </head>
-    <body class="antialiased">
-       <nav class="nav">
-           <img src="{{ asset('img/logo.png') }}" alt="" class="responsive-img">
+    <body class="antialiased home-body">
+       <nav class="nav home-nav">
+           <img src="{{ asset('img/logo.png') }}" alt="logo" class="responsive-img img-logo">
        </nav>
     </body>
 </html>
