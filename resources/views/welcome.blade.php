@@ -26,10 +26,10 @@
            </div>
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
-            <div class="w-50">
+            <div class="w-50 mt-lg-5">
                     Left Side
             </div>
-            <div class="w-50">
+            <div class="w-50 mt-lg-5">
                     Right Side
             </div>
        </div>
