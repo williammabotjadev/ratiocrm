@@ -11304,3 +11304,18 @@ textarea.form-control-lg {
 .features-btn {
   margin-right: 25px;
 }
+
+.signin-btn {
+  margin-right: 17.5px;
+}
+
+.getstarted-btn {
+  margin-right: 17.5px;
+}
+
+.btn-home {
+  background: blue;
+  border-radius: 10.5px;
+  color: white;
+}
+

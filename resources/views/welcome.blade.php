@@ -19,10 +19,10 @@
     <body class="antialiased home-body">
        <nav class="nav navbar home-nav">
            <img src="{{ asset('img/logo.png') }}" alt="logo" class="responsive-img img-logo">
-           <div class="nav-item ">
-               <a href="" class="btn">Get Started</a>
-               <a href="" class="btn">Sign in</a>
-               <a href="" class="btn mr-lg-5 features-btn">Features</a>
+           <div class="nav-item px-lg-5">
+               <a href="" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
+               <a href="" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
+               <a href="" class="btn btn-home mr-lg-5 features-btn">Features</a>
            </div>
        </nav>
     </body>
