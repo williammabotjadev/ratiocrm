@@ -15,7 +15,7 @@
     </head>
     <body class="antialiased">
        <nav class="nav">
-           <img src="{{ asset('') }}" alt="" class="responsive-img">
+           <img src="{{ asset('img/logo.png') }}" alt="" class="responsive-img">
        </nav>
     </body>
 </html>
