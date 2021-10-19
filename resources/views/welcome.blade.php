@@ -38,7 +38,21 @@
             </div>
             <div class="w-50 mt-lg-5 ml-lg-5">
                     <form action="" class="form-group">
-
+                        <label for="firstname" class="form-label">First Name</label>
+                        <br>
+                        <input type="text" class="input-field" placeholder="First Name">
+                        <br>
+                        <label for="lastname">Last Name</label>
+                        <br>
+                        <input type="text" class="input-field" placeholder="Last Name">
+                        <br>
+                        <label for="email" class="form-label">Email Address</label>
+                        <br>
+                        <input type="email" class="input-field">
+                        <br>
+                        <label for="password" class="form-label">Password</label>
+                        <br>
+                        <input type="password" class="input-field">
                     </form>
             </div>
        </div>
