@@ -27,10 +27,19 @@
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
             <div class="w-50 mt-lg-5">
-                    Left Side
+                    <h1 class="heading">
+                        Manage Customer Engagement
+                    </h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis ipsum rerum obcaecati, hic sed debitis consequatur quisquam exercitationem ut veniam similique voluptatum id sunt ex laboriosam omnis inventore praesentium dolore sequi quas rem! Dicta asperiores ad voluptate, laborum sunt laudantium quo suscipit, consequatur, iste minus voluptatibus veniam odio dignissimos dolores! Aperiam odit eaque animi quasi consequuntur officia unde adipisci, labore sapiente ex quisquam est, libero expedita. Itaque, eum ipsum dolorum natus, quibusdam, vero sint doloribus quam totam modi dicta. Excepturi fugit dicta aliquam obcaecati perspiciatis iure tempora quaerat, beatae quis accusamus nulla neque consectetur earum! Quod magni quasi minima!
+                    </p>
+                    <br>
+                    <a href="" class="btn btn-body">Find out More</a>
             </div>
-            <div class="w-50 mt-lg-5">
-                    Right Side
+            <div class="w-50 mt-lg-5 ml-lg-5">
+                    <form action="" class="form-group">
+
+                    </form>
             </div>
        </div>
     </body>
