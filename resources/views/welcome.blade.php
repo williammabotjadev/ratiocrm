@@ -30,8 +30,8 @@
                     <h1 class="heading">
                         Manage Customer Engagement
                     </h1>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis ipsum rerum obcaecati, hic sed debitis consequatur quisquam exercitationem ut veniam similique voluptatum id sunt ex laboriosam omnis inventore praesentium dolore sequi quas rem! Dicta asperiores ad voluptate, laborum sunt laudantium quo suscipit, consequatur, iste minus voluptatibus veniam odio dignissimos dolores! Aperiam odit eaque animi quasi consequuntur officia unde adipisci, labore sapiente ex quisquam est, libero expedita. Itaque, eum ipsum dolorum natus, quibusdam, vero sint doloribus quam totam modi dicta. Excepturi fugit dicta aliquam obcaecati perspiciatis iure tempora quaerat, beatae quis accusamus nulla neque consectetur earum! Quod magni quasi minima!
+                    <p class="lead main-par pr-5">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vero, tempore suscipit quod dignissimos quasi eos ea ratione architecto ipsam quos numquam doloremque veniam nihil rem provident eveniet explicabo quam in perferendis accusamus debitis. Necessitatibus suscipit reiciendis quisquam itaque! Eum repudiandae eveniet placeat maxime nemo magni similique aliquam molestias facere repellendus laborum numquam facilis laudantium autem optio illum odit, exercitationem vero sequi commodi minus sed ab dolore delectus! Optio quos quas eveniet mollitia dolorem rerum!
                     </p>
                     <br>
                     <a href="" class="btn btn-body">Find out More</a>
