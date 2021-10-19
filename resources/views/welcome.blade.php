@@ -44,19 +44,19 @@
                         <br>
                         <label for="firstname" class="form-label text-align-center">First Name</label>
                         <br>
-                        <input type="text" class="form-control" placeholder="First Name">
+                        <input id="firstname" name="firstname" type="text" class="form-control" placeholder="First Name">
                         <br>
                         <label for="lastname" class="form-label">Last Name</label>
                         <br>
-                        <input type="text" class="form-control" placeholder="Last Name">
+                        <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Last Name">
                         <br>
                         <label for="email" class="form-label">Email Address</label>
                         <br>
-                        <input type="email" class="form-control" placeholder="Email Address">
+                        <input id="email" name="email" type="email" class="form-control" placeholder="Email Address">
                         <br>
                         <label for="password" class="form-label">Password</label>
                         <br>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input id="password" name="password" type="password" class="form-control" placeholder="Password">
                         <br>
                         <button class="btn form-control form-btn">Create Account</button>
                         </fieldset>
