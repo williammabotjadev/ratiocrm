@@ -38,21 +38,27 @@
             </div>
             <div class="w-50 mt-lg-5 ml-lg-5">
                     <form action="" class="form-group">
-                        <label for="firstname" class="form-label">First Name</label>
+                        <fieldset>
+                        <legend>Create an Account</legend>
                         <br>
-                        <input type="text" class="input-field" placeholder="First Name">
+                        <label for="firstname" class="form-label text-align-center">First Name</label>
                         <br>
-                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" placeholder="First Name">
                         <br>
-                        <input type="text" class="input-field" placeholder="Last Name">
+                        <label for="lastname text-center">Last Name</label>
+                        <br>
+                        <input type="text" class="form-control" placeholder="Last Name">
                         <br>
                         <label for="email" class="form-label">Email Address</label>
                         <br>
-                        <input type="email" class="input-field">
+                        <input type="email" class="form-control" placeholder="Email Address">
                         <br>
                         <label for="password" class="form-label">Password</label>
                         <br>
-                        <input type="password" class="input-field">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <br>
+                        <button class="btn form-control form-btn">Create Account</button>
+                        </fieldset>
                     </form>
             </div>
        </div>

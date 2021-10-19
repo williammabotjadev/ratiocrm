@@ -11337,6 +11337,14 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+.form-btn {
+  background: white;
+  border: 1px solid blue;
+  border-radius: 7.5px;
+  color: blue;
+  font-weight: bold; 
+}
+
 .main-par {
   width: 80%;
 }
