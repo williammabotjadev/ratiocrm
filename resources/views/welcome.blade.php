@@ -39,13 +39,13 @@
             <div class="w-50 mt-lg-5 ml-lg-5">
                     <form action="" class="form-group">
                         <fieldset>
-                        <legend>Create an Account</legend>
+                        <legend class="form-title-text">Create an Account</legend>
                         <br>
                         <label for="firstname" class="form-label text-align-center">First Name</label>
                         <br>
                         <input type="text" class="form-control" placeholder="First Name">
                         <br>
-                        <label for="lastname text-center">Last Name</label>
+                        <label for="lastname" class="form-label">Last Name</label>
                         <br>
                         <input type="text" class="form-control" placeholder="Last Name">
                         <br>
