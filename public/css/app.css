@@ -11295,6 +11295,7 @@ textarea.form-control-lg {
 
 .home-body {
   background: blue;
+  color: white;
 }
 
 .home-nav {
@@ -11320,3 +11321,10 @@ textarea.form-control-lg {
   font-weight: bold;
 }
 
+.btn-home:hover {
+  background: white;
+  border: 1px solid blue;
+  border-radius: 7.5px;
+  color: blue;
+  font-weight: bold;
+}

@@ -25,5 +25,13 @@
                <a href="" class="btn btn-home mr-lg-5 features-btn">Features</a>
            </div>
        </nav>
+       <div class="container d-flex flex-row" aria-role="main">
+            <div class="w-50">
+                    Left Side
+            </div>
+            <div class="w-50">
+                    Right Side
+            </div>
+       </div>
     </body>
 </html>
