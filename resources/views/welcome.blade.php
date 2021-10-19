@@ -22,6 +22,7 @@
            <div class="nav-item ">
                <a href="" class="btn">Get Started</a>
                <a href="" class="btn">Sign in</a>
+               <a href="" class="btn mr-lg-5 features-btn">Features</a>
            </div>
        </nav>
     </body>
