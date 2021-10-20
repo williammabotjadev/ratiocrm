@@ -41,13 +41,13 @@
                     <div class="d-flex flex-row justify-content-around">
                         <a href="{{ route('features') }}" class="btn btn-body">Find out More</a>
                         <div class="d-flex flex-row justify-content-between align-items-center">
-                                <span class="circle-nav">
+                                <span id="circle-one">
+                                    &#9677;
+                                </span>
+                                <span class="circle-two">
                                     &#9711;
                                 </span>
-                                <span class="circle-nav">
-                                    &#9711;
-                                </span>
-                                <span class="circle-nav">
+                                <span class="circle-three">
                                     &#9711;
                                 </span>
                         </div>
