@@ -35,7 +35,7 @@
                     </p>
                     <br>
                     <div class="d-flex flex-row justify-content-around">
-                        <a href="" class="btn btn-body">Find out More</a>
+                        <a href="{{ route('features') }}" class="btn btn-body">Find out More</a>
                         <div class="d-flex flex-row justify-content-between align-items-center">
                                 <span class="circle-nav">
                                     &#9711;
