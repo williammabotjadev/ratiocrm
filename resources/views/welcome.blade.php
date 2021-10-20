@@ -14,6 +14,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
        
     </head>
     <body class="antialiased home-body">
@@ -29,7 +30,7 @@
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
             <div class="w-50 mt-lg-5">
-                    <h1 class="heading">
+                    <h1 class="heading" id="hero-heading">
                         Manage Customer Engagement
                     </h1>
                     <p class="lead main-par pr-5">
