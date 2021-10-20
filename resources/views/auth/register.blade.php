@@ -1,14 +1,12 @@
-@extends('layouts.app')
+@extends('layouts.reg')
 
 @section('content')
-<div class="container reg-body">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-                <div class="container">
-                <form method="POST" action="{{ route('register') }}">
+
+            <div class="container d-flex justify-content-center">
+                <form method="POST" action="{{ route('register') }}" class="col-md-8 centered">
                         @csrf
                         <fieldset>
-                            <legend class="form-legend">Create Account</legend>
+                            <legend class="form-legend text-primary">Create Account</legend>
                             <br>
                             <br>
                         <div class="form-group row d-flex flex-row align-items-center mt-lg-2">
@@ -85,8 +83,5 @@
                         </fieldset>
                     </form>
                     </div>
-        
-        </div>
-    </div>
-</div>
+                    
 @endsection

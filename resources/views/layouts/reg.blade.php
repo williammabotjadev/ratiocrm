@@ -23,7 +23,8 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <style>
         body {
-            background: white;
+            background-image: url('../img/blue-bg.png') no-repeat;
+            background-color: white;
         }
     </style>
 </head>
