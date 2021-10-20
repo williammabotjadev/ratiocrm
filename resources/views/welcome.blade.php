@@ -136,5 +136,6 @@
                     </form>
             </div>
        </div>
+       <script src="{{ asset('js/slide.js') }}"></script>
     </body>
 </html>
