@@ -11293,6 +11293,12 @@ textarea.form-control-lg {
   margin-left: 25px;
 }
 
+.img-logo-nav {
+  width: 15%;
+  margin-top: 12.5px;
+  margin-left: 25px;
+}
+
 .home-body {
   background: blue;
   color: white;
