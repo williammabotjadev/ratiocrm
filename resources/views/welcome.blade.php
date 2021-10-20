@@ -18,7 +18,7 @@
     </head>
     <body class="antialiased home-body">
        <nav class="nav navbar home-nav">
-           <a href="{{ url('/') }}"><img src="{{ asset('img/logo.png') }}" alt="logo" class="responsive-img img-logo"></a>
+           <img src="{{ asset('img/logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo">
            <div class="nav-item px-lg-5">
                <a href="{{ route('register') }}" target="_self" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
                <a href="{{ route('login') }}" target="_self" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
