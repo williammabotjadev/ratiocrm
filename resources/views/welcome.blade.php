@@ -44,10 +44,10 @@
                                 <span id="circle-one">
                                     &#9677;
                                 </span>
-                                <span class="circle-two">
+                                <span id="circle-two">
                                     &#9711;
                                 </span>
-                                <span class="circle-three">
+                                <span id="circle-three">
                                     &#9711;
                                 </span>
                         </div>
