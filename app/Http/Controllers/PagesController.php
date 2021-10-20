@@ -8,6 +8,6 @@ class PagesController extends Controller
 {
     public function features() 
     {
-        return view('features');
+        return view('pages.features');
     }
 }
