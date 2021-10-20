@@ -14,6 +14,7 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
        
     </head>
     <body class="antialiased home-body">
@@ -29,12 +30,13 @@
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
             <div class="w-50 mt-lg-5">
-                    <h1 class="heading">
+                    <h1 class="heading" id="hero-heading">
                         Manage Customer Engagement
                     </h1>
-                    <p class="lead main-par pr-5">
+                    <p class="lead main-par pr-5" id="main-par">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur vero, tempore suscipit quod dignissimos quasi eos ea ratione architecto ipsam quos numquam doloremque veniam nihil rem provident eveniet explicabo quam in perferendis accusamus debitis. Necessitatibus suscipit reiciendis quisquam itaque! Eum repudiandae eveniet placeat maxime nemo magni similique aliquam molestias facere repellendus laborum numquam facilis laudantium autem optio illum odit, exercitationem vero sequi commodi minus sed ab dolore delectus! Optio quos quas eveniet mollitia dolorem rerum!
                     </p>
+                    
                     <br>
                     <div class="d-flex flex-row justify-content-around">
                         <a href="{{ route('features') }}" class="btn btn-body">Find out More</a>
@@ -135,5 +137,6 @@
                     </form>
             </div>
        </div>
+       <script src="{{ asset('js/slide.js') }}"></script>
     </body>
 </html>
