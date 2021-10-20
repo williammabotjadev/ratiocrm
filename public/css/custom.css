@@ -79,4 +79,16 @@
     background: blue;
   } 
   
-  
+  .form-legend {
+      text-align: center;
+      margin-bottom: 12.5px;
+  }
+
+  .layout-body {
+      background: white;
+  }
+
+  .reg-layout-body {
+    background-image: url('../img/blue-bg.png');
+  }
+
