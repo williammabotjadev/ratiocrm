@@ -92,3 +92,6 @@
     background-image: url('../img/blue-bg.png');
   }
 
+  .blue-text {
+      color: blue;
+  }
