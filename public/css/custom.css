@@ -92,6 +92,10 @@
     background-image: url('../img/blue-bg.png');
   }
 
+  .login-layout-body {
+    background-image: url('../img/blue-bg-login.png');
+  }
+
   .blue-text {
       color: blue;
   }
