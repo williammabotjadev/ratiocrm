@@ -23,7 +23,7 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app layout-body">
     <nav class="navbar navbar-expand-md layout-nav">
             <a href="/" class="nav-item nav-link navbar-brand">
                 <img src="{{ asset('img/white-logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo-nav">
@@ -34,7 +34,7 @@
                <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
            </div>
        </nav>
-        <main class="py-4">
+        <main class="py-4 layout-body">
             @yield('content')
         </main>
     </div>
