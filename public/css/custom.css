@@ -114,4 +114,8 @@
     background: blue;
     height: 113px;
     width: 100%;
-}
+   }
+
+   .page-heading {
+       text-align: center;
+   }
