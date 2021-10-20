@@ -72,7 +72,7 @@
                         <br>
                         <input id="password" name="password" type="password" class="form-control" placeholder="Password">
                         <br>
-                        <button class="btn form-control form-btn">Create Account</button>
+                        <button type="button" class="btn form-control form-btn">Create Account</button>
                         </fieldset>
                     </form>
             </div>
