@@ -20,9 +20,9 @@
        <nav class="nav navbar home-nav">
            <img src="{{ asset('img/logo.png') }}" alt="logo" class="responsive-img img-logo" href="{{ url('/') }}">
            <div class="nav-item px-lg-5">
-               <a href="" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
-               <a href="" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
-               <a href="" class="btn btn-home mr-lg-5 features-btn">Features</a>
+               <a href="{{ route('register') }}" target="_self" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
+               <a href="{{ route('login') }}" target="_self" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
+               <a href="{{ route('features') }}" target="_self" class="btn btn-home mr-lg-5 features-btn">Features</a>
            </div>
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
