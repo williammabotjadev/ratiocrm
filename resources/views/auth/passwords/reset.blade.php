@@ -1,4 +1,4 @@
-@extends('layouts.login')
+@extends('layouts.passwords')
 
 @section('content')
 <div class="container">
@@ -58,8 +58,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
         </div>
     </div>
 </div>
