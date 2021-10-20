@@ -106,6 +106,12 @@
 
   .footer-auth {
       background: blue;
-      height: 10%;
+      height: 122px;
       width: 100%;
   }
+
+  .footer-auth-reg {
+    background: blue;
+    height: 113px;
+    width: 100%;
+}

@@ -43,6 +43,7 @@
             @yield('content')
         </div>
     </div>
-    <div class="footer">footer</div>
+    <div class="footer footer-auth">
+    </div>
 </body>
 </html>
