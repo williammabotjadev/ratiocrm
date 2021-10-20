@@ -39,6 +39,7 @@
                                 </button>
                             </div>
                         </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
