@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/features', [App\Http\Controllers\PagesController::class, 'features'])->name('features');
+
 Route::post('/', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('home-register');
 
 Auth::routes();
