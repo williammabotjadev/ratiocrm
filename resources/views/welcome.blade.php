@@ -17,12 +17,14 @@
        
     </head>
     <body class="antialiased home-body">
-       <nav class="nav navbar home-nav">
-           <img src="{{ asset('img/logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo">
-           <div class="nav-item px-lg-5">
-               <a href="{{ route('register') }}" target="_self" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
-               <a href="{{ route('login') }}" target="_self" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
-               <a href="{{ route('features') }}" target="_self" class="btn btn-home mr-lg-5 features-btn">Features</a>
+       <nav class="navbar navbar-expand-md home-nav">
+            <a href="/" class="nav-item nav-link navbar-brand">
+                <img src="{{ asset('img/logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo">
+            </a>
+              
+           <div class="nav-item">
+               <a href="{{ route('register') }}" target="_self" class="btn btn-home">Get Started</a>
+               <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
            </div>
        </nav>
        <div class="container d-flex flex-row" aria-role="main">
