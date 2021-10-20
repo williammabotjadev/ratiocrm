@@ -23,17 +23,14 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light layout-nav">
-        <img src="{{ asset('img/white-logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo-nav">
+    <nav class="nav navbar layout-nav">
+           <img src="{{ asset('img/white-logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo-nav">
            <div class="nav-item px-lg-5">
                <a href="{{ route('register') }}" target="_self" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
                <a href="{{ route('login') }}" target="_self" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
                <a href="{{ route('features') }}" target="_self" class="btn btn-home mr-lg-5 features-btn">Features</a>
            </div>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-        </nav>
+       </nav>
 
         <main class="py-4">
             @yield('content')
