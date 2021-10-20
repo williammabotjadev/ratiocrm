@@ -103,3 +103,15 @@
   .forgot-pass {
       margin-left: 95px;
   }
+
+  .footer-auth {
+      background: blue;
+      height: 122px;
+      width: 100%;
+  }
+
+  .footer-auth-reg {
+    background: blue;
+    height: 113px;
+    width: 100%;
+}
