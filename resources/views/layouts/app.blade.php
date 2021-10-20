@@ -23,8 +23,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-blue">
-        <img src="{{ asset('img/logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo">
+        <nav class="navbar navbar-expand-md navbar-light layout-nav">
+        <img src="{{ asset('img/white-logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo">
            <div class="nav-item px-lg-5">
                <a href="{{ route('register') }}" target="_self" class="btn btn-home mr-lg-5 getstarted-btn">Get Started</a>
                <a href="{{ route('login') }}" target="_self" class="btn btn-home mr-lg-5 signin-btn">Sign in</a>
