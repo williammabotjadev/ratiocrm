@@ -23,9 +23,8 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <style>
         body {
-            background-image: url('../img/blue-bg.png') no-repeat;
             background-color: white;
-        }
+        } 
     </style>
 </head>
 <body>
@@ -40,7 +39,7 @@
                <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
            </div>
        </nav>
-        <div class="py-4 layout-body">
+        <div class="py-4 reg-layout-body">
             @yield('content')
         </div>
     </div>
