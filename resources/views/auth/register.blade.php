@@ -6,7 +6,7 @@
                 <form method="POST" action="{{ route('register') }}" class="col-md-8 centered">
                         @csrf
                         <fieldset>
-                            <legend class="form-legend text-primary">Create Account</legend>
+                            <legend class="form-legend blue-text">Create Account</legend>
                             <br>
                             <br>
                         <div class="form-group row d-flex flex-row align-items-center mt-lg-2">
