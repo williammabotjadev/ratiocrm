@@ -27,11 +27,11 @@ class Employee extends Model
 
     public function company()
     {
-
+        return $this->belongsTo(Company::class, 'company_id');
     }
 
     public function customers()
     {
-        return $this->hasMany(Customer::class);
+        return $this->hasMany(Customer::class, 'customer_id');
     }
 }
