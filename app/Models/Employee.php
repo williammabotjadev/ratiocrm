@@ -21,7 +21,8 @@ class Employee extends Model
         'state_province_region',
         'linkedin_url',
         'twitter_url',
-        'facebook_url'
+        'facebook_url',
+        'employee_type'
     ];
 
     public function company()
@@ -31,6 +32,6 @@ class Employee extends Model
 
     public function customers()
     {
-        
+
     }
 }
