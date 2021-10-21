@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Company extends Model
+class Supplier extends Model
 {
     use HasFactory;
 
@@ -31,19 +31,4 @@ class Company extends Model
         'industry',
         'business_type'
     ];
-
-    public function employees()
-    {
-
-    }
-
-    public function customers()
-    {
-
-    }
-
-    public function suppliers() 
-    {
-
-    } 
 }

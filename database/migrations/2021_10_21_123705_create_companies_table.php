@@ -35,7 +35,6 @@ class CreateCompaniesTable extends Migration
             $table->string('contact_person_linkedin')->nullable();
             $table->string('industry')->nullable();
             $table->string('business_type')->nullable();
-            $table->string('business_role');
             $table->string('customer_id')->nullable();
             $table->foreign('id')->on('customers')->reference('id');
             $table->string('employee_id')->nullable();
