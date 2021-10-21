@@ -31,4 +31,14 @@ class Company extends Model
         'industry',
         'business_type'
     ];
+
+    public function employees()
+    {
+
+    }
+
+    public function customers()
+    {
+        
+    }
 }
