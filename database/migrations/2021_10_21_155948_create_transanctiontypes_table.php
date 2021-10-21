@@ -17,10 +17,10 @@ class CreateTransanctiontypesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('description');
-            $table->integer('transaction_id')->nullable();
+            /*$table->integer('transaction_id')->nullable();
             $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('cascade');
             $table->integer('employee_id')->nullable();
-            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');*/
             $table->timestamps();
         });
     }

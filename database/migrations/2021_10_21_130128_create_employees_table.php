@@ -30,7 +30,7 @@ class CreateEmployeesTable extends Migration
             $table->string('linkedin_url')->nullable();
             $table->string('twitter_url')->nullable();
             $table->string('employee_type')->nullable();
-            $table->integer('customer_id')->nullable();
+           /* $table->integer('customer_id')->nullable();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
             $table->integer('company_id')->nullable();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
@@ -39,7 +39,7 @@ class CreateEmployeesTable extends Migration
             $table->integer('service_type_id')->nullable();
             $table->foreign('service_type_id')->references('id')->on('servicetypes')->onDelete('cascade');
             $table->integer('product_type_id')->nullable();
-            $table->foreign('product_type_id')->references('id')->on('producttypes')->onDelete('cascade');
+            $table->foreign('product_type_id')->references('id')->on('producttypes')->onDelete('cascade');*/
             $table->timestamps();
         });
     }

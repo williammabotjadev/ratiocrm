@@ -16,7 +16,7 @@ class CreateTransactionsTable extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('transaction_type');
-            $table->integer('product_id')->nullable();
+          /*  $table->integer('product_id')->nullable();
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->integer('service_id')->nullable();
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
@@ -25,7 +25,7 @@ class CreateTransactionsTable extends Migration
             $table->integer('company_id')->nullable();
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->integer('employee_id')->nullable();
-            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');*/
             $table->timestamps();
         });
     }

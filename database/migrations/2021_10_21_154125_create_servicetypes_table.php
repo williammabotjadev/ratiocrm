@@ -17,10 +17,10 @@ class CreateServicetypesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('description')->nullable();
-            $table->integer('service_id');
+            /*$table->integer('service_id');
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->integer('employee_id');
-            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');*/
             $table->timestamps();
         });
     }

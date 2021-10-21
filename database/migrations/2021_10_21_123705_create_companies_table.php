@@ -36,7 +36,7 @@ class CreateCompaniesTable extends Migration
             $table->string('contact_person_linkedin')->nullable();
             $table->string('industry')->nullable();
             $table->string('business_type')->nullable();
-            $table->integer('customer_id')->nullable();
+            /*$table->integer('customer_id')->nullable();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
             $table->integer('employee_id')->nullable();
             $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
@@ -49,7 +49,7 @@ class CreateCompaniesTable extends Migration
             $table->integer('service_id')->nullable();
             $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
             $table->integer('transaction_id');
-            $table->foreign('transaction_id')->references('id')->on('transaction')->onDelete('cascade');
+            $table->foreign('transaction_id')->references('id')->on('transaction')->onDelete('cascade');*/
             $table->timestamps();
         });
     }
