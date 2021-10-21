@@ -39,6 +39,10 @@ class CreateCompaniesTable extends Migration
             $table->foreign('id')->on('customers')->reference('id');
             $table->string('employee_id')->nullable();
             $table->foreign('id')->on('employees')->reference('id');
+            $table->string('user_id')->nullable();
+            $table->foreign('id')->on('users')->reference('id');
+            $table->string('supplier_id')->nullable();
+            $table->foreign('id')->on('suppliers')->reference('id');
             $table->timestamps();
         });
     }

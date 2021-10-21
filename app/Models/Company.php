@@ -32,18 +32,23 @@ class Company extends Model
         'business_type'
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
     public function employees()
     {
-
+        return $this->hasMany(Employee::class, 'employee_id');
     }
 
     public function customers()
     {
-
+        return $this->hasMany(Customer::class, 'customer_id');
     }
 
     public function suppliers() 
     {
-
+        return $this->hasMany(Supplieer::class, 'supplier_id');
     } 
 }
