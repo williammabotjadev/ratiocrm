@@ -29,7 +29,8 @@ class Company extends Model
         'contact_person_contact_no',
         'contact_person_linkedin',
         'industry',
-        'business_type'
+        'business_type',
+        'business_role'
     ];
 
     public function employees()
@@ -39,6 +40,6 @@ class Company extends Model
 
     public function customers()
     {
-        
+
     }
 }
