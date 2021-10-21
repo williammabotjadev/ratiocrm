@@ -33,4 +33,19 @@ class Customer extends Model
         'business_role'
     ];
 
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class, 'company_id');
+    }
+
+    public function employee()
+    {
+        return $this->hasOne(Employee::class, 'employee_id');
+    }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'transaction_id');
+    }
 }

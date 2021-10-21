@@ -22,7 +22,7 @@ class CreateCompaniesTable extends Migration
             $table->string('citytown');
             $table->string('zip_postal_code');
             $table->string('state_province_region');
-            $table->string('email')->unique;
+            $table->string('email')->unique();
             $table->string('contact_no');
             $table->string('additional_contact_no')->nullable();
             $table->string('website_url')->nullable();
@@ -59,8 +59,6 @@ class CreateCompaniesTable extends Migration
      */
     public function down()
     {
-        Schema::table('companies', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('companies');
     }
 }
