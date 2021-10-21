@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UpdateServicetypesTable extends Migration
+class UpdateProducttypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class UpdateServicetypesTable extends Migration
      */
     public function up()
     {
-        Schema::table('servicetypes', function (Blueprint $table) {
+        Schema::table('producttypes', function (Blueprint $table) {
             
-            $table->integer('service_id')->unsigned()->nullable();
-            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+            $table->integer('product_id')->unsigned()->nullable();
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->integer('employee_id')->unsigned()->nullable();
-            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade'); 
+          
         });
     }
 
