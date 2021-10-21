@@ -59,6 +59,11 @@ class Company extends Model
 
     public function suppliers() 
     {
-        return $this->hasMany(Supplieer::class, 'supplier_id');
+        return $this->hasMany(Supplier::class, 'supplier_id');
+    } 
+
+    public function transactions() 
+    {
+        return $this->hasMany(Transaction::class, 'transaction_id');
     } 
 }
