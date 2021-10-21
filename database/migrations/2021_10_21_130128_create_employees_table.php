@@ -22,8 +22,10 @@ class CreateEmployeesTable extends Migration
             $table->string('citytown');
             $table->string('zip_postal_code');
             $table->string('state_province_region');
-            $table->string('email_address');
+            $table->string('email')->unique();
             $table->string('contact_no');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
             $table->string('facebook_url')->nullable();
             $table->string('linkedin_url')->nullable();
             $table->string('twitter_url')->nullable();

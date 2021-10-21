@@ -31,4 +31,19 @@ class Supplier extends Model
         'industry',
         'business_type'
     ];
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class, 'company_id');
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'product_id');
+    }
+
+    public function services()
+    {
+        return $this->hasMany(Service::class, 'service_id');
+    }
 }

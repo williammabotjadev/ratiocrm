@@ -22,7 +22,7 @@ class CreateCompaniesTable extends Migration
             $table->string('citytown');
             $table->string('zip_postal_code');
             $table->string('state_province_region');
-            $table->string('email_address');
+            $table->string('email')->unique;
             $table->string('contact_no');
             $table->string('additional_contact_no')->nullable();
             $table->string('website_url')->nullable();
@@ -31,6 +31,7 @@ class CreateCompaniesTable extends Migration
             $table->string('twitter_url')->nullable();
             $table->string('contact_person_firstname')->nullable();
             $table->string('contact_person_lastname')->nullable();
+            $table->string('contact_email')->nullable();
             $table->string('contact_person_contact_no')->nullable();
             $table->string('contact_person_linkedin')->nullable();
             $table->string('industry')->nullable();
@@ -43,6 +44,10 @@ class CreateCompaniesTable extends Migration
             $table->foreign('id')->on('users')->reference('id');
             $table->string('supplier_id')->nullable();
             $table->foreign('id')->on('suppliers')->reference('id');
+            $table->string('product_id')->nullable();
+            $table->foreign('id')->on('products')->reference('id');
+            $table->string('service_id')->nullable();
+            $table->foreign('id')->on('services')->references('id');
             $table->timestamps();
         });
     }

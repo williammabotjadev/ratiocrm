@@ -42,6 +42,16 @@ class Company extends Model
         return $this->hasMany(Employee::class, 'employee_id');
     }
 
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'product_id');
+    }
+
+    public function services()
+    {
+        return $this->hasMany(Service::class, 'service_id');
+    }
+
     public function customers()
     {
         return $this->hasMany(Customer::class, 'customer_id');
