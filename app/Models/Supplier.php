@@ -46,4 +46,14 @@ class Supplier extends Model
     {
         return $this->hasMany(Service::class, 'service_id');
     }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'transaction_id');
+    }
+
+    public function employee()
+    {
+        return $this->hasOne(Employee::class, 'employee_id');
+    }
 }

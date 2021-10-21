@@ -36,12 +36,12 @@ class CreateCustomersTable extends Migration
             $table->string('industry')->nullable();
             $table->string('business_type')->nullable();
             $table->string('business_role');
-            $table->string('company_id')->nullable();
-            $table->foreign('id')->on('companies')->reference('id');
-            $table->string('employee_id')->nullable();
-            $table->foreign('id')->on('employees')->reference('id');
-            $table->string('transaction_id')->nullable();
-            $table->foreign('id')->on('transactions')->reference('id');
+            $table->integer('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            $table->integer('employee_id')->nullable();
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->integer('transaction_id')->nullable();
+            $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('cascade');
             $table->timestamps();
         });
     }

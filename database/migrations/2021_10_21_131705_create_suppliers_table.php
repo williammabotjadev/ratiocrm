@@ -35,12 +35,16 @@ class CreateSuppliersTable extends Migration
             $table->string('contact_person_linkedin')->nullable();
             $table->string('industry')->nullable();
             $table->string('business_type')->nullable();
-            $table->string('company_id')->nullable();
-            $table->foreign('id')->on('companies')->reference('id');
-            $table->string('product_id')->nullable();
-            $table->foreign('id')->on('products')->reference('id');
-            $table->string('service_id')->nullable();
-            $table->foreign('id')->on('services')->references('id');
+            $table->integer('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            $table->integer('product_id')->nullable();
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->integer('service_id')->nullable();
+            $table->foreign('service_id')->references('id')->on('services')->onDelete('cascade');
+            $table->integer('employee_id')->nullable();
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->integer('transaction_id')->nullable();
+            $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('cascade');
             $table->timestamps();  
         });
     }

@@ -30,10 +30,12 @@ class CreateEmployeesTable extends Migration
             $table->string('linkedin_url')->nullable();
             $table->string('twitter_url')->nullable();
             $table->string('employee_type')->nullable();
-            $table->string('customer_id')->nullable();
-            $table->foreign('id')->on('customers')->reference('id');
-            $table->string('company_id')->nullable();
-            $table->foreign('id')->on('companies')->reference('id');
+            $table->integer('customer_id')->nullable();
+            $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
+            $table->integer('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
+            $table->integer('transaction_id')->nullable();
+            $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -40,4 +40,9 @@ class Employee extends Model
     {
         return $this->hasMany(Customer::class, 'customer_id');
     }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class, 'transaction_id');
+    }
 }
