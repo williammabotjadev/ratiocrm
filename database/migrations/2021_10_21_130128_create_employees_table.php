@@ -36,6 +36,10 @@ class CreateEmployeesTable extends Migration
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->integer('transaction_id')->nullable();
             $table->foreign('transaction_id')->references('id')->on('transactions')->onDelete('cascade');
+            $table->integer('service_type_id')->nullable();
+            $table->foreign('service_type_id')->references('id')->on('servicetypes')->onDelete('cascade');
+            $table->integer('product_type_id')->nullable();
+            $table->foreign('product_type_id')->references('id')->on('producttypes')->onDelete('cascade');
             $table->timestamps();
         });
     }

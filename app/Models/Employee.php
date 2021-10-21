@@ -45,4 +45,14 @@ class Employee extends Model
     {
         return $this->hasMany(Transaction::class, 'transaction_id');
     }
+
+    public function serviceTypes()
+    {
+        return $this->hasMany(ServiceType::class, 'service_type_id');
+    }
+
+    public function productTypes()
+    {
+        return $this->hasMany(ProductType::class, 'product_type_id');
+    }
 }

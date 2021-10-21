@@ -15,6 +15,10 @@ class CreateServicesTable extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->increment('id');
+            $table->string('price')->nullable();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->string('service_type')->nullable();
             $table->integer('supplier_id')->nullable();
             $table->foreign('supplier_id')->references('id')->on('suppliers')->onDelete('cascade');
             $table->integer('employee_id')->nullable();
