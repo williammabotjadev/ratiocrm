@@ -33,10 +33,12 @@
             <a href="/" class="nav-item nav-link navbar-brand">
                 <img src="{{ asset('img/white-logo.png') }}" alt="logo" class="img-fluid navbar-brand img-logo-nav">
             </a>
-              
+        
            <div class="nav-item">
-               <a href="{{ route('register') }}" target="_self" class="btn btn-home">Get Started</a>
-               <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
+               @guest
+                <a href="{{ route('register') }}" target="_self" class="btn btn-home">Get Started</a>
+                <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
+               @endguest
            </div>
        </nav>
         <div class="py-4 layout-body">
