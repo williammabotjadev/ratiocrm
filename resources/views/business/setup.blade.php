@@ -29,7 +29,7 @@
                <br>
                <label for="citytown" class="form-label">City/Town</label>
                <br>
-               <input type="text" name="citytown" id="citytown" class="form-control">
+               <input type="text" name="citytown" id="citytown" class="form-control px-5">
                <br>
             </div>
             <div class="w-50 container">
@@ -51,7 +51,7 @@
                <br>
                <label for="contactno" class="form-label">Contact Number</label>
                <br>
-               <input type="text" name="contactno" id="contactno" class="form-control">
+               <input type="text" name="contactno" id="contactno" class="form-control px-5">
                <br>
             </div>
             <div class="w-50 container">
@@ -71,7 +71,11 @@
                <br>
                <input type="text" name="contactemail" id="contactemail" class="form-control">
                <br>
-               <button type="submit" class="btn btn-home">Create Business</button>
+               <div class="d-flex flex-row">
+                    <button type="submit" class="btn btn-home px-5">Create</button>
+                    <a type="button" class="btn btn-danger text-white px-5" style="margin-left: 5px">Discard</a>
+               </div>
+              
                </div>
             </div>   
             </fieldset>
