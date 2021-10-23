@@ -3,13 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="d-flex flex-row justify-content-start align-items-start">
+        <div class="d-flex flex-row justify-content-center align-items-center">
            <form action="" class="form-group" method="POST">
                <fieldset>
                    <legend>Setup Your Business</legend>
                    <br>
+                   <br>
             <div class="d-flex flex-row">
-            <div class="w-50 ">
+            <div class="w-50 container">
                <label for="businessname" class="form-label">Business Name</label>
                <br>
                <input type="text" name="businessname" id="businessname" class="form-control">
@@ -31,7 +32,7 @@
                <input type="text" name="citytown" id="citytown" class="form-control">
                <br>
             </div>
-            <div class="w-50">
+            <div class="w-50 container">
                <label for="zippostalcode" class="form-label">Zip/Postal Code</label>
                <br>
                <input type="text" name="zippostalcode" id="zippostalcode" class="form-control">
@@ -53,7 +54,7 @@
                <input type="text" name="contactno" id="contactno" class="form-control">
                <br>
             </div>
-            <div class="w-50">
+            <div class="w-50 container">
                <label for="website" class="form-label">Company Website</label>
                <br>
                <input type="text" name="website" id="website" class="form-control">
