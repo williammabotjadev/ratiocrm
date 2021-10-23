@@ -17,6 +17,7 @@ class Supplier extends Model
         'citytown',
         'zip_postal_code',
         'state_province_region',
+        'country',
         'email_address',
         'contact_no',
         'additional_contact_no',

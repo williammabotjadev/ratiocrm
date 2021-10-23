@@ -24,6 +24,7 @@ class Employee extends Model
         'citytown',
         'zip_postal_code',
         'state_province_region',
+        'country',
         'linkedin_url',
         'twitter_url',
         'password',
