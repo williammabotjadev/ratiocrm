@@ -4,7 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="d-flex flex-row justify-content-center align-items-center">
-           <form action="" class="form-group" method="POST">
+           <form action="{{ route('store-biz') }}" class="form-group" method="POST">
+               @csrf
                <fieldset>
                    <legend>Setup Your Business</legend>
                    <br>
@@ -74,7 +75,7 @@
                <br>
                <div class="d-flex flex-row mt-2">
                     <button type="submit" class="btn btn-home px-5">Create</button>
-                    <a type="button" class="btn btn-danger text-white px-5 page-btn ml-5 btn-ml">Discard</a>
+                    <a href="{{ route('home') }}" type="button" class="btn btn-danger text-white px-5 page-btn ml-5 btn-ml">Discard</a>
                </div>
               
                </div>
