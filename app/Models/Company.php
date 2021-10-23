@@ -28,6 +28,7 @@ class Company extends Model
         'contact_person_firstname',
         'contact_person_lastname',
         'contact_person_contact_no',
+        'contact_email',
         'contact_person_linkedin',
         'industry',
         'business_type'

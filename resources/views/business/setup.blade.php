@@ -48,7 +48,24 @@
                <br>
                <input type="text" name="contactno" id="contactno" class="form-control">
                <br>
-               label
+               <label for="website" class="form-label">Company Website</label>
+               <br>
+               <input type="text" name="website" id="website" class="form-control">
+               <br>
+               <label for="contactfname" class="form-label">Contact First Name</label>
+               <br>
+               <input type="text" name="contactfname" id="contactfname" class="form-control">
+               <br>
+               <label for="contactlname" class="form-label">Contact Last Name</label>
+               <br>
+               <input type="text" name="contactlname" id="contactlname" class="form-control">
+               <br>
+               <label for="contactemail" class="form-label">Contact Email</label>
+               <br>
+               <input type="text" name="contactemail" id="contactemail" class="form-control">
+               <br>
+               <button type="submit" class="btn btn-home">Create Business</button>
+               </fieldset>
            </form>
         </div>
     </div>
