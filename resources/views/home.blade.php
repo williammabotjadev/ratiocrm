@@ -10,7 +10,7 @@
             <br>
             <h2>Setup your first Business!</h2>
             <br>
-            <a href="" class="btn btn-home btn-lg">Get Started</a>
+            <a href="{{ route('biz-setup') }}" class="btn btn-home btn-lg">Get Started</a>
         </div>
     </div>
 </div>
