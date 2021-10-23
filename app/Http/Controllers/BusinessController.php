@@ -33,7 +33,11 @@ class BusinessController extends Controller
 
         $business = Company::create($validated);
 
-        
+        $business->save();
+
+        return view('home');
+
+
         
     }
 }
