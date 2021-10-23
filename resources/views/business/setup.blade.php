@@ -9,7 +9,7 @@
                    <legend>Setup Your Business</legend>
                    <br>
             <div class="d-flex flex-row">
-            <div class="w-25">
+            <div class="w-50 ">
                <label for="businessname" class="form-label">Business Name</label>
                <br>
                <input type="text" name="businessname" id="businessname" class="form-control">
@@ -31,7 +31,7 @@
                <input type="text" name="citytown" id="citytown" class="form-control">
                <br>
             </div>
-            <div class="w-25">
+            <div class="w-50">
                <label for="zippostalcode" class="form-label">Zip/Postal Code</label>
                <br>
                <input type="text" name="zippostalcode" id="zippostalcode" class="form-control">
@@ -53,7 +53,7 @@
                <input type="text" name="contactno" id="contactno" class="form-control">
                <br>
             </div>
-            <div class="w-25">
+            <div class="w-50">
                <label for="website" class="form-label">Company Website</label>
                <br>
                <input type="text" name="website" id="website" class="form-control">
