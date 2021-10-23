@@ -40,7 +40,7 @@ class BusinessController extends Controller
             'zip_postal_code' => $validated['zip_postal_code'],
             'state_province_region' => $validated['state_province_region'],
             'country' => $validated['country'],
-            'email_address' => $validated['email_address'],
+            'email' => $validated['email_address'],
             'contact_no' => $validated['contact_no'],
             'website_url' => $validated['website_url'],
             'contact_person_firstname' => $validated['contact_person_firstname'],
