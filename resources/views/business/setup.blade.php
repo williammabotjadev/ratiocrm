@@ -5,6 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
            <form action="" class="form-group" method="POST">
+               <fieldset>
+                   <legend>Setup Your Business</legend>
+                   <br>
                <label for="businessname" class="form-label">Business Name</label>
                <br>
                <input type="text" name="businessname" id="businessname" class="form-control">
@@ -17,7 +20,7 @@
                <br>
                <input type="text" name="streetaddress" id="streetaddress" class="form-control">
                <br>
-               <label for="surburb" class="form-control">Surburb</label>
+               <label for="surburb" class="form-label">Surburb</label>
                <br>
                <input type="text" name="surburb" id="surburb" class="form-control">
                <br>
@@ -25,7 +28,27 @@
                <br>
                <input type="text" name="citytown" id="citytown" class="form-control">
                <br>
-               <label for="" class="form-label"></label>
+               <label for="zippostalcode" class="form-label">Zip/Postal Code</label>
+               <br>
+               <input type="text" name="zippostalcode" id="zippostalcode" class="form-control">
+               <br>
+               <label for="stateprovinceregion" class="form-label">State/Province/Region</label>
+               <br>
+               <input type="text" name="stateprovinceregion" id="stateprovinceregion" class="form-control">
+               <br>
+               <label for="country" class="form-label">Country</label>
+               <br>
+               <input type="text" name="country" id="country" class="form-control">
+               <br>
+               <label for="email" class="form-label">Email Address</label>
+               <br>
+               <input type="text" name="email" id="email" class="form-control">
+               <br>
+               <label for="contactno" class="form-label">Contact Number</label>
+               <br>
+               <input type="text" name="contactno" id="contactno" class="form-control">
+               <br>
+               label
            </form>
         </div>
     </div>

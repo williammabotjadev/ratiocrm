@@ -21,7 +21,7 @@ class Supplier extends Model
         'email_address',
         'contact_no',
         'additional_contact_no',
-        'website',
+        'website_url',
         'facebook_url',
         'linkedin_url',
         'twitter_url',
