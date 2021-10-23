@@ -3,6 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+    
+        <span>{{ $businesses }}</span>
+   
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
             <br>
             <br>
@@ -12,6 +15,7 @@
             <br>
             <a href="{{ route('biz-setup') }}" class="btn btn-home btn-lg">Get Started</a>
         </div>
+    
     </div>
 </div>
 @endsection

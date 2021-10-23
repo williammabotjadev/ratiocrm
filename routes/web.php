@@ -24,5 +24,5 @@ Route::post('/', [App\Http\Controllers\Auth\RegisterController::class, 'register
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/biz-setup', [App\Http\Controllers\Business\BusinessController::class, 'setup'])->name('biz-setup');
-Route::post('/biz-setup', [App\Http\Controllers\Business\BusinessController::class, 'store'])->name('store-biz');
+Route::get('/biz-setup', [App\Http\Controllers\BusinessController::class, 'setup'])->name('biz-setup');
+Route::post('/biz-setup', [App\Http\Controllers\BusinessController::class, 'store'])->name('store-biz');
