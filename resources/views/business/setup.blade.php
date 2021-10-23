@@ -73,7 +73,7 @@
                <br>
                <div class="d-flex flex-row">
                     <button type="submit" class="btn btn-home px-5">Create</button>
-                    <a type="button" class="btn btn-danger text-white px-5" style="margin-left: 5px">Discard</a>
+                    <a type="button" class="btn btn-danger text-white px-5 page-btn ml-5 btn-ml">Discard</a>
                </div>
               
                </div>

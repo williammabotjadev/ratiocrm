@@ -119,3 +119,11 @@
    .page-heading {
        text-align: center;
    }
+
+   .page-btn {
+     border-radius: 7.5px;
+   }
+
+   .btn-ml {
+     margin-left: 5px;
+   }
