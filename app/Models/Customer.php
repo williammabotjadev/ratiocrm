@@ -18,7 +18,7 @@ class Customer extends Model
         'zip_postal_code',
         'state_province_region',
         'country',
-        'email_address',
+        'email',
         'contact_no',
         'additional_contact_no',
         'website_url',
