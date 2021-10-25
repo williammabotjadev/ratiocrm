@@ -4,7 +4,27 @@
 <div class="container">
     <div class="row justify-content-center">
     @if (count($businesses) > 0)
-        <span>{{ $businesses }}</span>
+        <div class="container">
+           <h1 class="blue-text">Your Businesses</h1>
+           <br>
+            <table class="table-borderless d-flex justify-content-between">
+               
+                @foreach($businesses as $biz)
+                    <tr style="padding: 20px">
+                        <td>{{ $biz->name }}</td>
+                        <td>{{ $biz->citytown }}</td>
+                        <td>
+                            <a href="#" class="btn btn-home">Open</a>
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <form method="POST" action="{{ route('delete-all-biz') }}" class="container mt-lg-5">
