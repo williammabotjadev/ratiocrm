@@ -6,7 +6,6 @@
         <div class="d-flex flex-row justify-content-center align-items-center">
                 <h1>{{ $biz->name }}</h1>
                 <br>
-
         </div>
     </div>
 </div>

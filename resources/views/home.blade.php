@@ -14,7 +14,7 @@
                         <td class="px-5"><h3><strong>{{ $biz->name }}</strong></h3></td>
                         <td class="px-5"><h3><strong>{{ $biz->citytown }}</strong></h3></td>
                         <td class="px-5">
-                            <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Open</a>
+                            <a href="{{ route('biz', ['id' => $biz->id]) }}" target="_blank" class="btn btn-home">Open</a>
                         </td>
                     </tr>
                 @endforeach
@@ -29,10 +29,10 @@
         <br>
         <br>
         <a href="{{ route('biz-setup') }}" class="btn btn-home w-25 mt-lg-5">Add a Business</a>
-        <form method="POST" action="{{ route('delete-all-biz') }}" class="container mt-lg-5">
-            @csrf
-            <button type="submit" onclick="return confirm('Are you Sure you want to do this?');" class="btn btn-danger text-white">Delete All Businesses</button>
-        </form>
+            <form method="POST" action="{{ route('delete-all-biz') }}" class="container mt-lg-5">
+                @csrf
+                <button type="submit" onclick="return confirm('Are you Sure you want to do this?');" class="btn btn-danger text-white">Delete All Businesses</button>
+            </form>
     @else 
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
             <br>
