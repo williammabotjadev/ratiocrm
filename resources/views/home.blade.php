@@ -7,7 +7,10 @@
         <span>{{ $businesses }}</span>
         <br>
         <br>
-        <a href="{{ route('delete-all-biz')" class="btn btn-danger">Delete All Businesses</a>
+        <form method="POST" action="{{ route('delete-all-biz') }}">
+            @csrf
+            <button type="submit">Delete All Businesses</button>
+        </form>
     @else 
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
             <br>

@@ -63,4 +63,10 @@ class BusinessController extends Controller
 
         
     }
+
+    public function delete_all(Request $request) {
+        $user = $request->user();
+        $user->companies()->delete();
+        return redirect('home');
+    }
 }
