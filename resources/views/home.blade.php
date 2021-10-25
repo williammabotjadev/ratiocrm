@@ -7,7 +7,7 @@
         <div class="container">
            <h1 class="blue-text">Your Businesses</h1>
            <br>
-            <table class="table-borderless d-flex justify-content-between">
+            <table class="table-borderless d-flex justify-content-between mt-lg-5">
                
                 @foreach($businesses as $biz)
                     <tr>
@@ -27,6 +27,8 @@
         <br>
         <br>
         <br>
+        <br>
+        <a href="{{ route('biz-setup') }}" class="btn btn-home w-25 mt-lg-5">Add a Business</a>
         <form method="POST" action="{{ route('delete-all-biz') }}" class="container mt-lg-5">
             @csrf
             <button type="submit" class="btn btn-danger text-white">Delete All Businesses</button>
