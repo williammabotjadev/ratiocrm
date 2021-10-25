@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    
+    @if (count($businesses) > 0)
         <span>{{ $businesses }}</span>
-   
+    @else 
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
             <br>
             <br>
@@ -15,7 +15,7 @@
             <br>
             <a href="{{ route('biz-setup') }}" class="btn btn-home btn-lg">Get Started</a>
         </div>
-    
+    @endif
     </div>
 </div>
 @endsection
