@@ -27,3 +27,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/biz-setup', [App\Http\Controllers\BusinessController::class, 'setup'])->name('biz-setup');
 Route::post('/biz-setup', [App\Http\Controllers\BusinessController::class, 'store'])->name('store-biz');
 Route::post('/delete-biz', [App\Http\Controllers\BusinessController::class, 'delete_all'])->name('delete-all-biz');
+Route::get('/biz/{id}', [App\Http\Controllers\BusinessController::class, 'biz'])->name('biz');

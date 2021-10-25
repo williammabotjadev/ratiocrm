@@ -69,4 +69,15 @@ class BusinessController extends Controller
         $user->companies()->delete();
         return redirect('home');
     }
+
+    public function biz(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('business.biz', ['biz' => $biz]);
+    }
 }
