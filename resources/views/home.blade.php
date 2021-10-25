@@ -10,10 +10,10 @@
             <table class="table-borderless d-flex justify-content-between">
                
                 @foreach($businesses as $biz)
-                    <tr style="padding: 20px">
-                        <td>{{ $biz->name }}</td>
-                        <td>{{ $biz->citytown }}</td>
-                        <td>
+                    <tr>
+                        <td class="px-5"><h3><strong>{{ $biz->name }}</strong></h3></td>
+                        <td class="px-5"><h3><strong>{{ $biz->citytown }}</strong></h3></td>
+                        <td class="px-5">
                             <a href="#" class="btn btn-home">Open</a>
                         </td>
                     </tr>
