@@ -56,9 +56,9 @@ class BusinessController extends Controller
 
         $user->companies()->save($business);
 
-        dd($user);
+        // dd($user);
 
-        return view('home');
+        return redirect('home');
 
 
         

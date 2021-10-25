@@ -22,9 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
-        $businesses = Company::all();
-        return view('home', ['businesses' => $businesses]);
+        $user = $request->user();
+        $user_companies = $user->companies()->get();
+        return view('home', ['businesses' => $user_companies]);
     }
 }

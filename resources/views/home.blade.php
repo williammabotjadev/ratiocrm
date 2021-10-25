@@ -5,6 +5,9 @@
     <div class="row justify-content-center">
     @if (count($businesses) > 0)
         <span>{{ $businesses }}</span>
+        <br>
+        <br>
+        <a href="{{ route('delete-all-biz')" class="btn btn-danger">Delete All Businesses</a>
     @else 
         <div class="col-md-8 d-flex flex-column justify-content-center align-items-center">
             <br>
