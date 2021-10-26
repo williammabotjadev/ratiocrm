@@ -28,4 +28,9 @@ class HomeController extends Controller
         $user_companies = $user->companies()->get();
         return view('home', ['businesses' => $user_companies]);
     }
+
+    public function auth_home(Request $request)
+    {
+        return view('welcome');
+    }
 }
