@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Company;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -34,7 +35,7 @@ class HomeController extends Controller
         if(Auth::check()) {
             return redirect('home');
         }
-        
+
         return view('welcome');
     }
 }
