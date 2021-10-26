@@ -29,8 +29,12 @@ class HomeController extends Controller
         return view('home', ['businesses' => $user_companies]);
     }
 
-    public function auth_home(Request $request)
+    public function auth_home()
     {
+        if(Auth::check()) {
+            return redirect('home');
+        }
+        
         return view('welcome');
     }
 }
