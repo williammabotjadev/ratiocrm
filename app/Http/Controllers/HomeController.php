@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Company;
-use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -28,14 +27,5 @@ class HomeController extends Controller
         $user = $request->user();
         $user_companies = $user->companies()->get();
         return view('home', ['businesses' => $user_companies]);
-    }
-
-    public function auth_home()
-    {
-        if(Auth::check()) {
-            return redirect('home');
-        }
-
-        return view('welcome');
     }
 }
