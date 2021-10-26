@@ -28,33 +28,75 @@
             </div>
             <div id="menu1" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Customers</h3>
             <p>An Overview of Recent Customer Activity</p>
             </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Customers Home</button>
+            </div>
+            </div>
+            </div>
             <div id="menu2" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Supplliers</h3>
             <p>An Overview of Recent Supplier Activity</p>
             </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Suppliers Home</button>
+            </div>
+            </div>
+            </div>
             <div id="menu3" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Products</h3>
             <p>An Overview of Recent Products Activity</p>
             </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Products Home</button>
+            </div>
+            </div>
+            </div>
             <div id="menu4" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Services</h3>
             <p>An Overview of Recent Services Activity</p>
             </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Services Home</button>
+            </div>
+            </div>
+            </div>
             <div id="menu5" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Transactions</h3>
             <p>An Overview of Recent Transactions</p>
             </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Transactions Home</button>
+            </div>
+            </div>
+            </div>
             <div id="menu6" class="tab-pane fade">
             <br>
+            <div class="d-flex">
+            <div class="col">
             <h3>Reporting</h3>
             <p>An Overview of Recent Reports</p>
+            </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Reporting Home</button>
+            </div>
+            </div>
             </div>
         </div>
         </div>
