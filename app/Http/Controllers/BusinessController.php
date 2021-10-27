@@ -99,9 +99,8 @@ class BusinessController extends Controller
         //dd($id);
 
         $biz = Company::find($id);
-        $contact = $biz->contact;
 
-        return view('contact.edit', ['contact' => $contact]);
+        return view('contact.edit', ['biz' => $biz]);
     }
     
 }

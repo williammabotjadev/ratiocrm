@@ -1,12 +1,12 @@
-@extends('layouts.contact')
+@extends('layouts.biz')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1>{{ $contact }}</h1>
-                <h5 class="blue-text">Overview</h5>
+                <h1>Edit Company Contact Person</h1>
+                <h5 class="blue-text">{{ $biz->contact_person_firstname }}</h5>
                 <br>
             </div>
             
