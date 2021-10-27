@@ -1,14 +1,17 @@
-@extends('layouts.app')
+@extends('layouts.biz')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1>{{ $biz->name }}</h1>
                 <h5 class="blue-text">Overview</h5>
                 <br>
-                <div class="container">
- 
+            </div>
+            
+            <div class="container">
+
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active" href="#home">Home</a></li>
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu1">Customers</a></li>
