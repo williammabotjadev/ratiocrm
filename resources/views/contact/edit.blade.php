@@ -9,7 +9,7 @@
                 <h5 class="blue-text">{{ $biz->contact_person_firstname }}</h5>
                 <br>
             </div>
-            
+            <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
             <div class="container">
 
             <ul class="nav nav-tabs">

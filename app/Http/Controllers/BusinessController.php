@@ -102,5 +102,10 @@ class BusinessController extends Controller
 
         return view('contact.edit', ['biz' => $biz]);
     }
+
+    public function back_to_biz()
+    {
+        return back();
+    }
     
 }
