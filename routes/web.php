@@ -26,6 +26,5 @@ Route::get('/biz-setup', [App\Http\Controllers\BusinessController::class, 'setup
 Route::post('/biz-setup', [App\Http\Controllers\BusinessController::class, 'store'])->name('store-biz');
 Route::post('/delete-biz', [App\Http\Controllers\BusinessController::class, 'delete_all'])->name('delete-all-biz');
 Route::get('/biz/{id}', [App\Http\Controllers\BusinessController::class, 'biz'])->name('biz');
-Route::get('/biz/{id}', [App\Http\Controllers\BusinessController::class, 'edit'])->name('edit-biz');
-Route::get('/biz/{id}', [App\Http\Controllers\BusinessController::class, 'edit_contact'])->name('edit-biz-contact');
-// Route::get('/biz/{id}', [App\Http\Controllers\BusinessController::class, 'edit'])->name('edit-biz');
+Route::get('/biz/edit/{id}', [App\Http\Controllers\BusinessController::class, 'edit'])->name('edit-biz');
+Route::get('/biz/contact/edit/{id}', [App\Http\Controllers\BusinessController::class, 'edit_contact'])->name('edit-biz-contact');
