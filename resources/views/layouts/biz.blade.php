@@ -46,9 +46,9 @@
                         <strong>Settings</strong>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Contact</a></li>
+                        <li><a class="dropdown-item" href="#">Edit Company</a></li>
+                        <li><a class="dropdown-item" href="#">Customize Dashboards</a></li>
                     </ul>
                 </div>
                     <form method="POST" action="{{ route('logout') }}">
