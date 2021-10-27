@@ -40,11 +40,22 @@
                 <a href="{{ route('login') }}" target="_self" class="btn btn-home">Sign in</a>
                @endguest
                @auth
-                    
+               <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="dropdown">
+                    <a class="dropdown-toggle text-white settings-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Settings</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit"  class="btn btn-home">Sign Out</button>
                     </form>
+                </div>
                 @endauth
            </div>
        </nav>
