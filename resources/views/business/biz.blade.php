@@ -18,9 +18,10 @@
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu2">Suppliers</a></li>
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu3">Products</a></li>
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu4">Services</a></li>
+                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu7">Employees</a></li>
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu5">Transactions</a></li>
                 <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu6">Reporting</a></li>
-                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#menu7"><span class="plus-sign"><strong>+</strong></span></a></li>
+                <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#"><span class="plus-sign"><strong>+</strong></span></a></li>
             </ul>
 
         <div class="tab-content">
@@ -98,6 +99,18 @@
             </div>
             <div class="col">
                 <button class="btn btn-home btn-home-tabs">Reporting Home</button>
+            </div>
+            </div>
+            </div>
+            <div id="menu7" class="tab-pane fade">
+            <br>
+            <div class="d-flex">
+            <div class="col">
+            <h3>Employees</h3>
+            <p>An Overview of Recent Personnel Activity</p>
+            </div>
+            <div class="col">
+                <button class="btn btn-home btn-home-tabs">Employees Home</button>
             </div>
             </div>
             </div>
