@@ -46,8 +46,8 @@
                         <strong>Settings</strong>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Edit Contact</a></li>
-                        <li><a class="dropdown-item" href="#">Edit Company</a></li>
+                        <li><a class="dropdown-item" href="{{ route('edit-biz-contact', ['id' => $biz->id]) }}">Edit Contact</a></li>
+                        <li><a class="dropdown-item" href="{{ route('edit-biz', ['id' => $biz->id]) }}">Edit Company</a></li>
                         <li><a class="dropdown-item" href="#">Customize Dashboards</a></li>
                     </ul>
                 </div>
