@@ -80,4 +80,28 @@ class BusinessController extends Controller
 
         return view('business.biz', ['biz' => $biz]);
     }
+
+    public function edit(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('business.edit', ['biz' => $biz]);
+    }
+
+    public function edit_contact(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+        $contact = $biz->contact;
+
+        return view('contact.edit', ['contact' => $contact]);
+    }
+    
 }
