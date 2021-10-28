@@ -9,16 +9,16 @@ use App\Models\Supplier;
 
 class SupplierController extends Controller
 {
-    public function new_customer(Request $request)
+    public function new_supplier(Request $request)
     {
         $id = $request->id;
 
         $biz = Company::find($id);
 
-        return view('customers.new', ['biz' => $biz]);
+        return view('suppliers.new', ['biz' => $biz]);
     }
 
-    public function store_customer(Request $request)
+    public function store_supplier(Request $request)
     {
         $user = $request->user();
         
@@ -66,11 +66,11 @@ class SupplierController extends Controller
 
         $supplier = Supplier::create($supplier_data);
 
-        $biz->customers()->save($customer);
+        $biz->suppliers()->save($supplier);
 
         // dd($user);
 
-        return redirect('customers.home');
+        return redirect('suppliers.new');
 
     }
 }

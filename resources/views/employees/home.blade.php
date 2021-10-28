@@ -15,7 +15,7 @@
             <h3 class="blue-text mt-5 mb-5">No Personnel Data Yet</h3>
             @endif
                 <br>
-            <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Employee</a>
+            <a href="{{ route('new-employee', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Employee</a>
                 <br>
             <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
     </div>
