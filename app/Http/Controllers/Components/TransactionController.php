@@ -4,15 +4,17 @@ namespace App\Http\Controllers\Components;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Company;
+use App\Models\Transaction;
 
 class TransactionController extends Controller
 {
-    public function new_customer()
+    public function new_transaction()
     {
-        return view('customers.new');
+        return view('transactions.new');
     }
 
-    public function store_customer(Request $request)
+    public function store_transaction(Request $request)
     {
         $user = $request->user();
         
@@ -35,7 +37,7 @@ class TransactionController extends Controller
 
         dd($validated);*/
 
-        $business_data = [
+        $transaction_data = [
             'name' => $request['businessname'],
             'registration_no' => $request['regno'],
             'street_address' => $request['streetaddress'],
@@ -58,13 +60,13 @@ class TransactionController extends Controller
 
         $biz = Company::find($id);
 
-        $customer = Customer::create($customer_data);
+        $transaction = Transaction::create($transaction_data);
 
-        $biz->customers()->save($customer);
+        $biz->transactions()->save($transaction);
 
         // dd($user);
 
-        return redirect('customers.home');
+        return redirect('transactions.home');
 
     }
 }
