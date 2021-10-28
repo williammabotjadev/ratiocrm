@@ -39,5 +39,13 @@ Route::get('/services/{id}', [App\Http\Controllers\BusinessController::class, 'b
 Route::get('/transactions/{id}', [App\Http\Controllers\BusinessController::class, 'biz_transactions'])->name('biz-transactions');
 Route::get('/reporting/{id}', [App\Http\Controllers\BusinessController::class, 'biz_reporting'])->name('biz-reporting');
 
-// Component Creation Routes
+// Component Creation Routes : GET
+
+Route::get('/customers/new', [App\Http\Controllers\BusinessController::class, 'new_customer'])->name('new-customer');
+Route::get('/suppliers/new', [App\Http\Controllers\BusinessController::class, 'new_supplier'])->name('new-supplier');
+Route::get('/employees/new', [App\Http\Controllers\BusinessController::class, 'new_employee'])->name('new-employee');
+Route::get('/products/new', [App\Http\Controllers\BusinessController::class, 'new_product'])->name('new-product');
+Route::get('/services/new', [App\Http\Controllers\BusinessController::class, 'new_service'])->name('new-service');
+Route::get('/transactions/new', [App\Http\Controllers\BusinessController::class, 'new_transaction'])->name('new-transaction');
+Route::get('/reporting/new', [App\Http\Controllers\BusinessController::class, 'new_report'])->name('new-report');
 
