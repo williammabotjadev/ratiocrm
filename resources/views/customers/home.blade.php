@@ -15,7 +15,9 @@
             <h3 class="blue-text">No Customer Data Yet</h3>
         @endif
         <br>
+        <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Customer</a>
         </div>
+        <br>
         <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
     </div>
 </div>

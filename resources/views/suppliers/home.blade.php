@@ -9,9 +9,15 @@
                 <h5 class="blue-text">Overview</h5>
                 <br>
             </div>
-            {{ $suppliers }}
-        </div>
-        <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
+            @if (count($suppliers) < 0)
+                {{ $suppliers }}
+            @else 
+                <h3 class="blue-text">No Supplier Data Yet</h3>
+            @endif
+            <br>
+                <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Supplier</a>
+            <br>
+                <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
     </div>
 </div>
 @endsection
