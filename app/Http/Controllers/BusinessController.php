@@ -103,9 +103,81 @@ class BusinessController extends Controller
         return view('contact.edit', ['biz' => $biz]);
     }
 
-    public function back_to_biz()
-    {
-        return back();
+    public function biz_customers(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('customers.home', ['biz' => $biz]);
+    }
+
+    public function biz_suppliers(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('suppliers.home', ['biz' => $biz]);
+    }
+
+    public function biz_employees(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('employees.home', ['biz' => $biz]);
+    }
+
+    public function biz_products(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('products.home', ['biz' => $biz]);
+    }
+
+    public function biz_services(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('services.home', ['biz' => $biz]);
+    }
+
+    public function biz_transactions(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('transactions.home', ['biz' => $biz]);
+    }
+
+    public function biz_reporting(Request $request) {
+        
+        //dd($request);
+        $id = $request->id;
+        //dd($id);
+
+        $biz = Company::find($id);
+
+        return view('reporting.home', ['biz' => $biz]);
     }
     
 }

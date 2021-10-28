@@ -38,7 +38,7 @@
             <p>An Overview of Recent Customer Activity</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Customers Home</button>
+                <a href="{{ route('biz-customers', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Customers Home</a>
             </div>
             </div>
             </div>
@@ -50,7 +50,7 @@
             <p>An Overview of Recent Supplier Activity</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Suppliers Home</button>
+                <a href="{{ route('biz-suppliers', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Suppliers Home</a>
             </div>
             </div>
             </div>
@@ -62,7 +62,7 @@
             <p>An Overview of Recent Products Activity</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Products Home</button>
+                <a href="{{ route('biz-products', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Products Home</a>
             </div>
             </div>
             </div>
@@ -74,7 +74,7 @@
             <p>An Overview of Recent Services Activity</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Services Home</button>
+                <a href="{{ route('biz-services', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Services Home</a>
             </div>
             </div>
             </div>
@@ -86,7 +86,7 @@
             <p>An Overview of Recent Transactions</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Transactions Home</button>
+                <a href="{{ route('biz-transactions', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Transactions Home</a>
             </div>
             </div>
             </div>
@@ -98,7 +98,7 @@
             <p>An Overview of Recent Reports</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Reporting Home</button>
+                <a href="{{ route('biz-reporting', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Reporting Home</a>
             </div>
             </div>
             </div>
@@ -110,7 +110,7 @@
             <p>An Overview of Recent Personnel Activity</p>
             </div>
             <div class="col">
-                <button class="btn btn-home btn-home-tabs">Employees Home</button>
+                <a href="{{ route('biz-employees', ['id' => $biz->id]) }}" class="btn btn-home btn-home-tabs">Employees Home</a>
             </div>
             </div>
             </div>
