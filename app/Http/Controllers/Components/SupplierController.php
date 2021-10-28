@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Components;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Company;
+use App\Models\Supplier;
 
 class SupplierController extends Controller
 {
@@ -35,7 +37,7 @@ class SupplierController extends Controller
 
         dd($validated);*/
 
-        $business_data = [
+        $supplier_data = [
             'name' => $request['businessname'],
             'registration_no' => $request['regno'],
             'street_address' => $request['streetaddress'],
@@ -58,7 +60,7 @@ class SupplierController extends Controller
 
         $biz = Company::find($id);
 
-        $customer = Customer::create($customer_data);
+        $supplier = Supplier::create($supplier_data);
 
         $biz->customers()->save($customer);
 
