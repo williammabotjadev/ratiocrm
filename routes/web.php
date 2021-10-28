@@ -41,11 +41,20 @@ Route::get('/reporting/{id}', [App\Http\Controllers\BusinessController::class, '
 
 // Component Creation Routes : GET
 
-Route::get('/customers/new', [App\Http\Controllers\BusinessController::class, 'new_customer'])->name('new-customer');
-Route::get('/suppliers/new', [App\Http\Controllers\BusinessController::class, 'new_supplier'])->name('new-supplier');
-Route::get('/employees/new', [App\Http\Controllers\BusinessController::class, 'new_employee'])->name('new-employee');
-Route::get('/products/new', [App\Http\Controllers\BusinessController::class, 'new_product'])->name('new-product');
-Route::get('/services/new', [App\Http\Controllers\BusinessController::class, 'new_service'])->name('new-service');
-Route::get('/transactions/new', [App\Http\Controllers\BusinessController::class, 'new_transaction'])->name('new-transaction');
-Route::get('/reporting/new', [App\Http\Controllers\BusinessController::class, 'new_report'])->name('new-report');
+Route::get('/customers/new', [App\Http\Controllers\Components\CustomerController::class, 'new_customer'])->name('new-customer');
+Route::get('/suppliers/new', [App\Http\Controllers\Components\SupplierController::class, 'new_supplier'])->name('new-supplier');
+Route::get('/employees/new', [App\Http\Controllers\Components\EmployeeController::class, 'new_employee'])->name('new-employee');
+Route::get('/products/new', [App\Http\Controllers\Components\ProductController::class, 'new_product'])->name('new-product');
+Route::get('/services/new', [App\Http\Controllers\Components\ServiceController::class, 'new_service'])->name('new-service');
+Route::get('/transactions/new', [App\Http\Controllers\Components\TransactionController::class, 'new_transaction'])->name('new-transaction');
+Route::get('/reporting/new', [App\Http\Controllers\Components\ReportingController::class, 'new_report'])->name('new-report');
 
+// Component Creation Routes : POST
+
+Route::post('/customers/new', [App\Http\Controllers\Components\CustomerController::class, 'store_customer'])->name('store-customer');
+Route::post('/suppliers/new', [App\Http\Controllers\Components\SupplierController::class, 'store_supplier'])->name('store-supplier');
+Route::post('/employees/new', [App\Http\Controllers\Components\EmployeeController::class, 'store_employee'])->name('store-employee');
+Route::post('/products/new', [App\Http\Controllers\Components\ProductController::class, 'store_product'])->name('store-product');
+Route::post('/services/new', [App\Http\Controllers\Components\ServiceController::class, 'store_service'])->name('store-service');
+Route::post('/transactions/new', [App\Http\Controllers\Components\TransactionController::class, 'store_transaction'])->name('store-transaction');
+Route::post('/reporting/new', [App\Http\Controllers\Components\ReportingController::class, 'store_report'])->name('store-report');
