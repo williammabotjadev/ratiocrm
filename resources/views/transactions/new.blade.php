@@ -7,7 +7,7 @@
            <form action="{{ route('store-biz') }}" class="form-group" method="POST">
                @csrf
                <fieldset>
-                   <legend>Setup Your Business</legend>
+                   <legend>New Transaction</legend>
                    <br>
                    <br>
             <div class="d-flex flex-row">
