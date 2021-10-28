@@ -9,7 +9,7 @@
                 <h5 class="blue-text">Overview</h5>
                 <br>
             </div>
-            {{ var_dump($transactions) }}
+            {{ $transactions }}
         </div>
         <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
     </div>
