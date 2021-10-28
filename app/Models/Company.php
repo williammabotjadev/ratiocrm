@@ -41,31 +41,31 @@ class Company extends Model
 
     public function employees()
     {
-        return $this->hasMany(Employee::class, 'employee_id');
+        return $this->hasMany(Employee::class, 'company_id');
     }
 
     public function products()
     {
-        return $this->hasMany(Product::class, 'product_id');
+        return $this->hasMany(Product::class, 'company_id');
     }
 
     public function services()
     {
-        return $this->hasMany(Service::class, 'service_id');
+        return $this->hasMany(Service::class, 'company_id');
     }
 
     public function customers()
     {
-        return $this->hasMany(Customer::class, 'customer_id');
+        return $this->hasMany(Customer::class, 'company_id');
     }
 
     public function suppliers() 
     {
-        return $this->hasMany(Supplier::class, 'supplier_id');
+        return $this->hasMany(Supplier::class, 'company_id');
     } 
 
     public function transactions() 
     {
-        return $this->hasMany(Transaction::class, 'transaction_id');
+        return $this->hasMany(Transaction::class, 'company_id');
     } 
 }

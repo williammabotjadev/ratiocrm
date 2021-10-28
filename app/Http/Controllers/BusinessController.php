@@ -111,7 +111,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('customers.home', ['biz' => $biz]);
+        $customers = $biz->customers()->get();
+
+        return view('customers.home', ['biz' => $biz, 'customers' => $customers]);
     }
 
     public function biz_suppliers(Request $request) {
@@ -122,7 +124,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('suppliers.home', ['biz' => $biz]);
+        $suppliers = $biz->suppliers()->get();
+
+        return view('suppliers.home', ['biz' => $biz, 'suppliers' => $suppliers]);
     }
 
     public function biz_employees(Request $request) {
@@ -133,7 +137,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('employees.home', ['biz' => $biz]);
+        $employees = $biz->employees()->get();
+
+        return view('employees.home', ['biz' => $biz, 'employees' => $employees]);
     }
 
     public function biz_products(Request $request) {
@@ -144,7 +150,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('products.home', ['biz' => $biz]);
+        $products = $biz->products()->get();
+
+        return view('products.home', ['biz' => $biz, 'products' => $products]);
     }
 
     public function biz_services(Request $request) {
@@ -155,7 +163,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('services.home', ['biz' => $biz]);
+        $services = $biz->services()->get();
+
+        return view('services.home', ['biz' => $biz, 'services' => $services]);
     }
 
     public function biz_transactions(Request $request) {
@@ -166,7 +176,7 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        $transactions = $biz->transactions();
+        $transactions = $biz->transactions()->get();
 
         return view('transactions.home', ['biz' => $biz, 'transactions' => $transactions]);
     }
@@ -177,9 +187,9 @@ class BusinessController extends Controller
         $id = $request->id;
         //dd($id);
 
-        $transactions = $biz->transactions();
+        $transactions = $biz->transactions()->get();
 
-        return view('transactions.home', ['biz' => $biz, 'transactions' => $transactions]);
+        return view('reporting.home', ['biz' => $biz, 'transactions' => $transactions]);
     }
     
 }

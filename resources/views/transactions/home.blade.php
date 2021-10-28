@@ -11,6 +11,7 @@
             </div>
             {{ var_dump($transactions) }}
         </div>
+        <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home">Business Home</a>
     </div>
 </div>
 @endsection
