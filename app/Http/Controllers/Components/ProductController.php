@@ -9,9 +9,13 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function new_product()
+    public function new_product(Request $request)
     {
-        return view('products.new');
+        $id = $request->id;
+
+        $biz = Company::find($id);
+
+        return view('products.new', ['biz' => $biz]);
     }
 
     public function store_product(Request $request)

@@ -9,9 +9,13 @@ use App\Models\Employee;
 
 class EmployeeController extends Controller
 {
-    public function new_employee()
+    public function new_employee(Request $request)
     {
-        return view('employees.new');
+        $id = $request->id;
+
+        $biz = Company::find($id);
+
+        return view('employees.new', ['biz' => $biz]);
     }
 
     public function store_employee(Request $request)

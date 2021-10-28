@@ -9,9 +9,13 @@ use App\Models\Service;
 
 class ServiceController extends Controller
 {
-    public function new_service()
+    public function new_service(Request $request)
     {
-        return view('services.new');
+        $id = $request->id;
+
+        $biz = Company::find($id);
+
+        return view('services.new', ['biz' => $biz]);
     }
 
     public function store_service(Request $request)

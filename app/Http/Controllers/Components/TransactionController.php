@@ -9,9 +9,13 @@ use App\Models\Transaction;
 
 class TransactionController extends Controller
 {
-    public function new_transaction()
+    public function new_transaction(Request $request)
     {
-        return view('transactions.new');
+        $id = $request->id;
+
+        $biz = Company::find($id);
+
+        return view('transactions.new', ['biz' => $biz]);
     }
 
     public function store_transaction(Request $request)

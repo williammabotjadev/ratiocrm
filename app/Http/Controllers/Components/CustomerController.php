@@ -9,9 +9,13 @@ use App\Models\Customer;
 
 class CustomerController extends Controller
 {
-    public function new_customer()
+    public function new_customer(Request $request)
     {
-        return view('customers.new');
+        $id = $request->id;
+
+        $biz = Company::find($id);
+
+        return view('customers.new', ['biz' => $biz]);
     }
 
     public function store_customer(Request $request)
