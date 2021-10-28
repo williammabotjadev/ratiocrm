@@ -38,3 +38,6 @@ Route::get('/products/{id}', [App\Http\Controllers\BusinessController::class, 'b
 Route::get('/services/{id}', [App\Http\Controllers\BusinessController::class, 'biz_services'])->name('biz-services');
 Route::get('/transactions/{id}', [App\Http\Controllers\BusinessController::class, 'biz_transactions'])->name('biz-transactions');
 Route::get('/reporting/{id}', [App\Http\Controllers\BusinessController::class, 'biz_reporting'])->name('biz-reporting');
+
+// Component Creation Routes
+
