@@ -62,7 +62,7 @@ class CustomerController extends Controller
 
         $customer = Customer::create($customer_data);
 
-        $biz->customers()->save($business);
+        $biz->customers()->save($customer);
 
         // dd($user);
 
