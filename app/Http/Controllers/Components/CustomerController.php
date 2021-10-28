@@ -68,7 +68,5 @@ class CustomerController extends Controller
 
         return redirect('customers.home');
 
-
-        
     }
 }
