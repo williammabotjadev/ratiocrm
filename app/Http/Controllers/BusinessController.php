@@ -166,7 +166,9 @@ class BusinessController extends Controller
 
         $biz = Company::find($id);
 
-        return view('transactions.home', ['biz' => $biz]);
+        $transactions = $biz->transactions();
+
+        return view('transactions.home', ['biz' => $biz, 'transactions' => $transactions]);
     }
 
     public function biz_reporting(Request $request) {
@@ -175,9 +177,9 @@ class BusinessController extends Controller
         $id = $request->id;
         //dd($id);
 
-        $biz = Company::find($id);
+        $transactions = $biz->transactions();
 
-        return view('reporting.home', ['biz' => $biz]);
+        return view('transactions.home', ['biz' => $biz, 'transactions' => $transactions]);
     }
     
 }
