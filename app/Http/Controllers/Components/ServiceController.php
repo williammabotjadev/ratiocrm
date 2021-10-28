@@ -4,15 +4,17 @@ namespace App\Http\Controllers\Components;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Company;
+use App\Models\Service;
 
 class ServiceController extends Controller
 {
-    public function new_customer()
+    public function new_service()
     {
-        return view('customers.new');
+        return view('services.new');
     }
 
-    public function store_customer(Request $request)
+    public function store_service(Request $request)
     {
         $user = $request->user();
         
@@ -35,7 +37,7 @@ class ServiceController extends Controller
 
         dd($validated);*/
 
-        $business_data = [
+        $service_data = [
             'name' => $request['businessname'],
             'registration_no' => $request['regno'],
             'street_address' => $request['streetaddress'],
@@ -58,13 +60,13 @@ class ServiceController extends Controller
 
         $biz = Company::find($id);
 
-        $customer = Customer::create($customer_data);
+        $service = Service::create($service_data);
 
-        $biz->customers()->save($customer);
+        $biz->services()->save($service);
 
         // dd($user);
 
-        return redirect('customers.home');
+        return redirect('services.home');
 
     }
 }
