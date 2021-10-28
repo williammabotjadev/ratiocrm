@@ -12,7 +12,7 @@
             @if (count($services) < 0)
                 {{ $services }}
             @else 
-                <h3 class="blue-text">No Service Data Yet</h3>
+                <h3 class="blue-text mt-5 mb-5">No Service Data Yet</h3>
             @endif
                 <br>
             <a href="{{ route('biz', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Service</a>
