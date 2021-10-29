@@ -10,7 +10,15 @@
                 <br>
             </div>
             @if (count($customers) > 0)
-                {{ $customers }}
+                @foreach($customers as $customer)
+                        <tr>
+                            <td class="px-5"><h3><strong>{{ $customer->name }}</strong></h3></td>
+                            <td class="px-5"><h3><strong>{{ $customer->citytown }}</strong></h3></td>
+                            <td class="px-5">
+                                <a href="{{ route('customer', ['id' => $biz->id]) }}" target="_blank" class="btn btn-home">Open</a>
+                            </td>
+                        </tr>
+                @endforeach
             @else 
                 <h3 class="blue-text mt-5 mb-5">No Customer Data Yet</h3>
             @endif
