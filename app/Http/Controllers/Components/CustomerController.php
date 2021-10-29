@@ -41,7 +41,7 @@ class CustomerController extends Controller
 
         dd($validated);*/
 
-        $business_data = [
+        $customer_data = [
             'name' => $request['businessname'],
             'registration_no' => $request['regno'],
             'street_address' => $request['streetaddress'],
@@ -50,7 +50,7 @@ class CustomerController extends Controller
             'zip_postal_code' => $request['zippostalcode'],
             'state_province_region' => $request['stateprovinceregion'],
             'country' => $request['country'],
-            'email' => $request['email'],
+            'email_address' => $request['email'],
             'contact_no' => $request['contactno'],
             'website_url' => $request['website'],
             'contact_person_firstname' => $request['contactfname'],
