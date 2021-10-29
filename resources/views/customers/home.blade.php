@@ -15,7 +15,7 @@
                             <td class="px-5"><h3><strong>{{ $customer->name }}</strong></h3></td>
                             <td class="px-5"><h3><strong>{{ $customer->citytown }}</strong></h3></td>
                             <td class="px-5">
-                                <a href="{{ route('customer', ['id' => $biz->id]) }}" target="_blank" class="btn btn-home">Open</a>
+                                <a href="{{ route('customer', ['id' => $customer->id]) }}" target="_blank" class="btn btn-home">Open</a>
                             </td>
                         </tr>
                 @endforeach

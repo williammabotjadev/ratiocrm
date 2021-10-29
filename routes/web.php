@@ -58,3 +58,7 @@ Route::post('/products/new', [App\Http\Controllers\Components\ProductController:
 Route::post('/services/new', [App\Http\Controllers\Components\ServiceController::class, 'store_service'])->name('store-service');
 Route::post('/transactions/new', [App\Http\Controllers\Components\TransactionController::class, 'store_transaction'])->name('store-transaction');
 Route::post('/reporting/new', [App\Http\Controllers\Components\ReportingController::class, 'store_report'])->name('store-report');
+
+// Component Single Page : GET
+
+Route::get('/customer/{id}', [App\Http\Controllers\Components\CustomerController::class, 'customer'])->name('customer');
