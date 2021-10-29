@@ -60,7 +60,7 @@ class CustomerController extends Controller
 
         //dd($request);
         $id = $request->id;
-        //dd($id);
+        // dd($id);
 
         $biz = Company::find($id);
 
@@ -68,9 +68,11 @@ class CustomerController extends Controller
 
         $biz->customers()->save($customer);
 
+        $customers = $biz->customers()->get();
+
         // dd($user);
 
-        return redirect('customers.home');
+        return view('customers.home', ['biz' => $biz, 'customers' => $customers]);
 
     }
 }

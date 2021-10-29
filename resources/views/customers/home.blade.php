@@ -9,7 +9,7 @@
                 <h5 class="blue-text">Customers</h5>
                 <br>
             </div>
-            @if (count($customers) < 0)
+            @if (count($customers) > 0)
                 {{ $customers }}
             @else 
                 <h3 class="blue-text mt-5 mb-5">No Customer Data Yet</h3>
