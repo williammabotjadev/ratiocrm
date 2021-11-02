@@ -9,11 +9,12 @@
                 <h5 class="blue-text">Overview</h5>
                 <br>
             </div>
+            <table>
             @if (count($services) > 0)
                     @foreach($services as $service)
                                 <tr>
                                     <td class="px-5"><h3><strong>{{ $service->name }}</strong></h3></td>
-                                    <td class="px-5"><h3><strong>{{ $service->citytown }}</strong></h3></td>
+                                    <td class="px-5"><h3><strong>$ {{ $service->price }}</strong></h3></td>
                                     <td class="px-5">
                                         <a href="{{ route('service', ['id' => $service->id]) }}" target="_blank" class="btn btn-home">View Service</a>
                                     </td>
