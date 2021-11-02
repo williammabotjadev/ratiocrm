@@ -12,9 +12,13 @@
                    <br>
             <div class="d-flex flex-row">
             <div class="w-50 container">
-               <label for="businessname" class="form-label">Business Name</label>
+               <label for="customer" class="form-label">Select Customer</label>
                <br>
-               <input type="text" name="businessname" id="businessname" class="form-control" required>
+               <select name="customer" id="customer" class="form-control" required>
+                  @foreach($customers as $customer)
+                        <option value="{{ $customer->name }}">{{$customer->name}}</option>
+                  @endforeach
+               </select>
                <br>
                <label for="regno" class="form-label">Registration Number</label>
                <br>

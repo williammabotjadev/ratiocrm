@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Company;
 use App\Models\Transaction;
+use App\Models\Customer;
 
 class TransactionController extends Controller
 {
@@ -15,7 +16,9 @@ class TransactionController extends Controller
 
         $biz = Company::find($id);
 
-        return view('transactions.new', ['biz' => $biz]);
+        $customers = $biz->customers()->get();
+
+        return view('transactions.new', ['biz' => $biz, 'customers' => $customers]);
     }
 
     public function store_transaction(Request $request)
