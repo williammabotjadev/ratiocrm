@@ -62,3 +62,4 @@ Route::post('/reporting/new', [App\Http\Controllers\Components\ReportingControll
 // Component Single Page : GET
 
 Route::get('/customer/{id}', [App\Http\Controllers\Components\CustomerController::class, 'customer'])->name('customer');
+Route::get('/supplier/{id}', [App\Http\Controllers\Components\SupplierController::class, 'supplier'])->name('supplier');
