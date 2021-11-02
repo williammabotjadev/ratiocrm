@@ -42,20 +42,12 @@ class ProductController extends Controller
         dd($validated);*/
 
         $product_data = [
-            'name' => $request['businessname'],
-            'registration_no' => $request['regno'],
-            'street_address' => $request['streetaddress'],
-            'surburb' => $request['surburb'],
-            'citytown' => $request['citytown'],
-            'zip_postal_code' => $request['zippostalcode'],
-            'state_province_region' => $request['stateprovinceregion'],
-            'country' => $request['country'],
-            'email' => $request['email'],
-            'contact_no' => $request['contactno'],
-            'website_url' => $request['website'],
-            'contact_person_firstname' => $request['contactfname'],
-            'contact_person_lastname' => $request['contactlname'],
-            'contact_email' => $request['contactemal']
+            'name' => $request['prodname'],
+            'sku_code' => $request['prodsku'],
+            'description' => $request['description'],
+            'product_type' => $request['producttype'],
+            'cost_price' => $request['costprice'],
+            'selling_price' => $request['sellingprice']
         ];
 
         //dd($request);
@@ -68,9 +60,10 @@ class ProductController extends Controller
 
         $biz->products()->save($product);
 
+        $products = $biz->products()->get();
         // dd($user);
 
-        return redirect('products.home');
+        return view('products.home', ['biz' => $biz, 'products' => $products]);
 
     }
 }
