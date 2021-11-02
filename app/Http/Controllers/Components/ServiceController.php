@@ -62,7 +62,7 @@ class ServiceController extends Controller
         // dd($user);
         $services = $biz->services()->get();
 
-        return redirect('services.home', ['services' => $services, 'biz' => $biz]);
+        return view('services.home', ['services' => $services, 'biz' => $biz]);
 
     }
 }
