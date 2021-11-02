@@ -16,7 +16,7 @@ class TransactionType extends Model
 
     public function transaction()
     {
-        return $this->belongsTo(Transaction::class, 'transaction_id');
+        return $this->belongsTo(Company::class, 'transaction_id');
     }
 
     public function employee()

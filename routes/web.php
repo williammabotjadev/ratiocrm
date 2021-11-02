@@ -49,6 +49,13 @@ Route::get('/services/new/{id}', [App\Http\Controllers\Components\ServiceControl
 Route::get('/transactions/new/{id}', [App\Http\Controllers\Components\TransactionController::class, 'new_transaction'])->name('new-transaction');
 Route::get('/reporting/new/{id}', [App\Http\Controllers\Components\ReportingController::class, 'new_report'])->name('new-report');
 
+// Type Creation Routes : GET 
+
+Route::get('/transaction-type/new/{id}', [App\Http\Controllers\Components\TransactionTypeController::class, 'new_transaction_type'])->name('new-transaction-type');
+Route::get('/employee-type/new/{id}', [App\Http\Controllers\Components\EmployeeTypeController::class, 'new_employee_type'])->name('new-employee-type');
+Route::get('/product-type/new/{id}', [App\Http\Controllers\Components\ProductTypeController::class, 'new_product_type'])->name('new-product-type');
+Route::get('/service-type/new/{id}', [App\Http\Controllers\Components\ServiceTypeController::class, 'new_service_type'])->name('new-service-type');
+
 // Component Creation Routes : POST
 
 Route::post('/customers/new', [App\Http\Controllers\Components\CustomerController::class, 'store_customer'])->name('store-customer');

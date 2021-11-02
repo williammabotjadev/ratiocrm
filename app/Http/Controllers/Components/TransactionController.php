@@ -20,7 +20,14 @@ class TransactionController extends Controller
 
         $employees = $biz->employees()->get();
 
-        return view('transactions.new', ['biz' => $biz, 'customers' => $customers, 'employees' => $employees]);
+        $transaction_types = $biz->transaction_types()->get();
+
+        return view('transactions.new', [
+            'biz' => $biz, 
+            'customers' => $customers, 
+            'employees' => $employees, 
+            'transaction_types' => $transaction_types
+        ]);
     }
 
     public function store_transaction(Request $request)
