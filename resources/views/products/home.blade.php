@@ -6,19 +6,21 @@
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1>{{ $biz->name }}</h1>
-                <h5 class="blue-text">Overview</h5>
+                <h5 class="blue-text">Products</h5>
                 <br>
             </div>
+            <table>
             @if (count($products) > 0)
                 @foreach($products as $product)
                         <tr>
-                            <td class="px-5"><h3><strong>{{ $product->name }}</strong></h3></td>
-                            <td class="px-5"><h3><strong>$ {{ $product->selling_price }}</strong></h3></td>
+                            <td class="px-5"><h5><strong>{{ $product->name }}</strong></h5></td>
+                            <td class="px-5"><h5><strong>$ {{ $product->selling_price }}</strong></h5></td>
                             <td class="px-5">
-                                <a href="{{ route('product', ['id' => $product->id]) }}" target="_blank" class="btn btn-home">Open</a>
+                                <a href="{{ route('product', ['id' => $product->id]) }}" target="_blank" class="btn btn-home">View Product</a>
                             </td>
                         </tr>
                 @endforeach
+            </table>
             @else 
             <h3 class="blue-text mt-5 mb-5">No Product Data Yet</h3>
             @endif
