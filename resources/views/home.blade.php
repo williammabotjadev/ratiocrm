@@ -43,6 +43,8 @@
             <br>
             <a href="{{ route('biz-setup') }}" class="btn btn-home btn-lg">Get Started</a>
         </div>
+        <br>
+            <img src="{{ asset('img/confertti.png') }}" alt="confertti" id="confertti" class="mt-lg-4">
     @endif
     </div>
 </div>
