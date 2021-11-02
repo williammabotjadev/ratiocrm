@@ -13,7 +13,8 @@
             @if (count($employees) > 0)
                 @foreach($employees as $employee)
                         <tr>
-                            <td class="px-5"><h3><strong>{{ $employee->name }}</strong></h3></td>
+                            <td class="px-5"><h3><strong>{{ $employee->firstname }}</strong></h3></td>
+                            <td class="px-5"><h3><strong>{{ $employee->lastname }}</strong></h3></td>
                             <td class="px-5"><h3><strong>{{ $employee->employee_type }}</strong></h3></td>
                             <td class="px-5">
                                 <a href="{{ route('employee', ['id' => $employee->id]) }}" target="_blank" class="btn btn-home">View Employee</a>
