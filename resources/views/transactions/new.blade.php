@@ -27,18 +27,18 @@
                         <option value="{{ $rep->firstname}} {{ $rep->lastname }}">{{$rep->firstname}} {{$rep->lastname}}</option>
                   @endforeach
                </select>
-               <label for="streetaddress" class="form-label">Street Address</label>
                <br>
-               <input type="text" name="streetaddress" id="streetaddress" class="form-control" required>
+               <label for="trans_type" class="form-label">Transaction Type</label>
                <br>
-               <label for="surburb" class="form-label">Surburb</label>
-               <br>
-               <input type="text" name="surburb" id="surburb" class="form-control" required>
-               <br>
-               <label for="citytown" class="form-label">City/Town</label>
-               <br>
-               <input type="text" name="citytown" id="citytown" class="form-control px-5" required>
-               <br>
+               <select name="trans_type" id="trans_type" class="form-control" required>
+               @if(count($transaction_types))
+                  @foreach($transactions as $trans_type)
+                        <option value="{{ $trans_type->title}}">{{$trans_type->title}}</option>
+                  @endforeach
+               @else
+
+               @endif
+               </select>
             </div>
             <div class="w-50 container">
                <label for="zippostalcode" class="form-label">Zip/Postal Code</label>
