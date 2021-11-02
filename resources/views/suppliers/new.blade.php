@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="d-flex flex-row justify-content-center align-items-center">
-           <form action="{{ route('store-biz') }}" class="form-group" method="POST">
+           <form action="{{ route('store-supplier', ['id' => $biz->id]) }}" class="form-group" method="POST">
                @csrf
                <fieldset>
                    <legend>New Supplier</legend>
