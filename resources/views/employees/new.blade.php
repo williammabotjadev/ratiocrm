@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="d-flex flex-row justify-content-center align-items-center">
-           <form action="{{ route('store-biz') }}" class="form-group" method="POST">
+           <form action="{{ route('store-employee') }}" class="form-group" method="POST">
                @csrf
                <fieldset>
                    <legend>New Employee</legend>
@@ -12,13 +12,13 @@
                    <br>
             <div class="d-flex flex-row">
             <div class="w-50 container">
-               <label for="businessname" class="form-label">Business Name</label>
+               <label for="firstname" class="form-label">First Name</label>
                <br>
-               <input type="text" name="businessname" id="businessname" class="form-control" required>
+               <input type="text" name="firstname" id="firstname" class="form-control" required>
                <br>
-               <label for="regno" class="form-label">Registration Number</label>
+               <label for="lastname" class="form-label">Last Name</label>
                <br>
-               <input type="text" name="regno" id="regno" class="form-control" required>
+               <input type="text" name="lastname" id="lastname" class="form-control" required>
                <br>
                <label for="streetaddress" class="form-label">Street Address</label>
                <br>
@@ -56,21 +56,21 @@
                <br>
             </div>
             <div class="w-50 container">
-               <label for="website" class="form-label">Company Website</label>
+               <label for="password" class="form-label">Employee Password</label>
                <br>
-               <input type="text" name="website" id="website" class="form-control" required>
+               <input type="text" name="password" id="password" class="form-control" required>
                <br>
-               <label for="contactfname" class="form-label">Contact First Name</label>
+               <label for="linkedin_url" class="form-label">Linkedin Profile</label>
                <br>
-               <input type="text" name="contactfname" id="contactfname" class="form-control" required>
+               <input type="text" name="linkedin_url" id="linkedin_url" class="form-control">
                <br>
-               <label for="contactlname" class="form-label">Contact Last Name</label>
+               <label for="facebook_url" class="form-label">Facebook Profile</label>
                <br>
-               <input type="text" name="contactlname" id="contactlname" class="form-control" required>
+               <input type="text" name="facebook_url" id="facebook_url" class="form-control">
                <br>
-               <label for="contactemail" class="form-label">Contact Email</label>
+               <label for="employee_type" class="form-label">Employee Type</label>
                <br>
-               <input type="text" name="contactemail" id="contactemail" class="form-control" required>
+               <input type="text" name="employee_type" id="employee_type" class="form-control">
                <br>
                <br>
                <div class="d-flex flex-row mt-2">
