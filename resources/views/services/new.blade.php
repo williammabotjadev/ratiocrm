@@ -12,13 +12,9 @@
             
             <div class="d-flex flex-row justify-content-center">
               <div class="prod-left">  
-               <label for="prodname" class="form-label">Service Name</label>
+               <label for="servname" class="form-label">Service Name</label>
                <br>
-               <input type="text" name="prodname" id="prodname" class="form-control" required>
-               <br>
-               <label for="prodsku" class="form-label">SKU Code</label>
-               <br>
-               <input type="text" name="prodsku" id="prodsku" class="form-control">
+               <input type="text" name="servname" id="servname" class="form-control" required>
                <br>
                <label for="description" class="form-label">Service Description</label>
                <br>

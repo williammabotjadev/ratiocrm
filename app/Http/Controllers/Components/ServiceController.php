@@ -42,20 +42,11 @@ class ServiceController extends Controller
         dd($validated);*/
 
         $service_data = [
-            'name' => $request['businessname'],
-            'registration_no' => $request['regno'],
-            'street_address' => $request['streetaddress'],
-            'surburb' => $request['surburb'],
-            'citytown' => $request['citytown'],
-            'zip_postal_code' => $request['zippostalcode'],
-            'state_province_region' => $request['stateprovinceregion'],
-            'country' => $request['country'],
-            'email' => $request['email'],
-            'contact_no' => $request['contactno'],
-            'website_url' => $request['website'],
-            'contact_person_firstname' => $request['contactfname'],
-            'contact_person_lastname' => $request['contactlname'],
-            'contact_email' => $request['contactemal']
+            'name' => $request['servname'],
+            'description' => $request['description'],
+            'service_type' => $request['servicetype'],
+            'service_cost' => $request['servicecost'],
+            'price' => $request['serviceprice']
         ];
 
         //dd($request);
@@ -69,8 +60,9 @@ class ServiceController extends Controller
         $biz->services()->save($service);
 
         // dd($user);
+        $services = $biz->services()->get();
 
-        return redirect('services.home');
+        return redirect('services.home', ['services' => $services, 'biz' => $biz]);
 
     }
 }
