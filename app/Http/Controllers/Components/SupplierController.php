@@ -68,9 +68,11 @@ class SupplierController extends Controller
 
         $biz->suppliers()->save($supplier);
 
+        $suppliers = $biz->suppliers()->get();
+
         // dd($user);
 
-        return redirect('suppliers.new');
+        return view('suppliers.home', ['suppliers' => $suppliers, 'biz' => $biz]);
 
     }
 }
