@@ -16,12 +16,12 @@ class Transaction extends Model
     
     public function products()
     {
-        return $this->hasMany(Product::class, 'product_id');
+        return $this->hasMany(Product::class, 'transaction_id');
     }
 
     public function services()
     {
-        return $this->hasMany(Service::class, 'service_id');
+        return $this->hasMany(Service::class, 'transaction_id');
     }
 
     public function company()
@@ -31,7 +31,7 @@ class Transaction extends Model
 
     public function customer()
     {
-        return $this->hasOne(Customer::class, 'customer_id');
+        return $this->hasOne(Customer::class, 'transaction_id');
     }
 
     public function employee()

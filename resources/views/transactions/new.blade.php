@@ -20,10 +20,13 @@
                   @endforeach
                </select>
                <br>
-               <label for="regno" class="form-label">Registration Number</label>
+               <label for="rep" class="form-label">Sales Rep</label>
                <br>
-               <input type="text" name="regno" id="regno" class="form-control" required>
-               <br>
+               <select name="rep" id="rep" class="form-control" required>
+                  @foreach($employees as $rep)
+                        <option value="{{ $rep->firstname}} {{ $rep->lastname }}">{{$rep->firstname}} {{$rep->lastname}}</option>
+                  @endforeach
+               </select>
                <label for="streetaddress" class="form-label">Street Address</label>
                <br>
                <input type="text" name="streetaddress" id="streetaddress" class="form-control" required>
