@@ -68,9 +68,10 @@ class EmployeeController extends Controller
 
         $biz->employees()->save($employee);
 
+        $employees = $biz->employees()->get();
         // dd($user);
 
-        return redirect('employees.home');
+        return view('employees.home', ['employees' => $employees, 'biz' => $biz]);
 
     }
 }
