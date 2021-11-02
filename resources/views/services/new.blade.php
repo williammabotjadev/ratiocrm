@@ -34,9 +34,9 @@
                <br>
                <input type="number" name="servicecost" id="servicecost" class="form-control" required>
                <br>
-               <label for="sellingprice" class="form-label">Selling Price</label>
+               <label for="serviceprice" class="form-label">Service Price</label>
                <br>
-               <input type="number" name="sellingprice" id="sellingprice" class="form-control" required>
+               <input type="number" name="serviceprice" id="serviceprice" class="form-control" required>
                <br>
                <div class="d-flex flex-row">
                     <button type="submit" class="btn btn-home px-5">Create</button>
