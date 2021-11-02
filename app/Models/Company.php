@@ -68,4 +68,24 @@ class Company extends Model
     {
         return $this->hasMany(Transaction::class, 'company_id');
     } 
+
+    public function transaction_types() 
+    {
+        return $this->hasMany(TransactionType::class, 'company_id');
+    } 
+
+    public function service_types() 
+    {
+        return $this->hasMany(ServiceType::class, 'company_id');
+    } 
+
+    public function product_types() 
+    {
+        return $this->hasMany(ProductType::class, 'company_id');
+    } 
+
+    public function employee_types() 
+    {
+        return $this->hasMany(EmployeeType::class, 'company_id');
+    } 
 }

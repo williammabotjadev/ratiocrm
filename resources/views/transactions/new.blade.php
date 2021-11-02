@@ -36,7 +36,7 @@
                         <option value="{{ $trans_type->title}}">{{$trans_type->title}}</option>
                   @endforeach
                @else
-
+                     <option value="new_tt"><a href="#">Create New Type</a></option>
                @endif
                </select>
             </div>
