@@ -9,8 +9,18 @@
                 <h5 class="blue-text">Employees</h5>
                 <br>
             </div>
-            @if (count($employees) < 0)
-                {{ $employees }}
+            <table>
+            @if (count($employees) > 0)
+                @foreach($employees as $employee)
+                        <tr>
+                            <td class="px-5"><h3><strong>{{ $employee->name }}</strong></h3></td>
+                            <td class="px-5"><h3><strong>{{ $employee->citytown }}</strong></h3></td>
+                            <td class="px-5">
+                                <a href="{{ route('employee', ['id' => $employee->id]) }}" target="_blank" class="btn btn-home">View Employee</a>
+                            </td>
+                        </tr>
+                @endforeach
+            </table>
             @else 
             <h3 class="blue-text mt-5 mb-5">No Personnel Data Yet</h3>
             @endif
