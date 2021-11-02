@@ -42,8 +42,8 @@ class EmployeeController extends Controller
         dd($validated);*/
 
         $employee_data = [
-            'name' => $request['businessname'],
-            'registration_no' => $request['regno'],
+            'firstname' => $request['firstname'],
+            'lastname' => $request['lastname'],
             'street_address' => $request['streetaddress'],
             'surburb' => $request['surburb'],
             'citytown' => $request['citytown'],
@@ -52,15 +52,15 @@ class EmployeeController extends Controller
             'country' => $request['country'],
             'email' => $request['email'],
             'contact_no' => $request['contactno'],
-            'website_url' => $request['website'],
-            'contact_person_firstname' => $request['contactfname'],
-            'contact_person_lastname' => $request['contactlname'],
-            'contact_email' => $request['contactemal']
+            'password' => $request['password'],
+            'linkedin_url' => $request['linkedin_url'],
+            'facebook_url' => $request['facebook_url'],
+            'employee_type' => $request['employee_type']
         ];
 
         //dd($request);
         $id = $request->id;
-        //dd($id);
+        // dd($id);
 
         $biz = Company::find($id);
 
