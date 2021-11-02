@@ -2,87 +2,49 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="d-flex flex-row justify-content-center align-items-center">
-           <form action="{{ route('store-biz') }}" class="form-group" method="POST">
+  
+           <form action="{{ route('store-service', ['id' => $biz->id]) }}" class="form-group" method="POST">
                @csrf
                <fieldset>
                    <legend>New Service</legend>
                    <br>
                    <br>
-            <div class="d-flex flex-row">
-            <div class="w-50 container">
-               <label for="businessname" class="form-label">Business Name</label>
+            
+            <div class="d-flex flex-row justify-content-center">
+              <div class="prod-left">  
+               <label for="prodname" class="form-label">Service Name</label>
                <br>
-               <input type="text" name="businessname" id="businessname" class="form-control" required>
+               <input type="text" name="prodname" id="prodname" class="form-control" required>
                <br>
-               <label for="regno" class="form-label">Registration Number</label>
+               <label for="prodsku" class="form-label">SKU Code</label>
                <br>
-               <input type="text" name="regno" id="regno" class="form-control" required>
+               <input type="text" name="prodsku" id="prodsku" class="form-control">
                <br>
-               <label for="streetaddress" class="form-label">Street Address</label>
+               <label for="description" class="form-label">Service Description</label>
                <br>
-               <input type="text" name="streetaddress" id="streetaddress" class="form-control" required>
-               <br>
-               <label for="surburb" class="form-label">Surburb</label>
-               <br>
-               <input type="text" name="surburb" id="surburb" class="form-control" required>
-               <br>
-               <label for="citytown" class="form-label">City/Town</label>
-               <br>
-               <input type="text" name="citytown" id="citytown" class="form-control px-5" required>
-               <br>
+               <textarea cols="10" rows="5" name="description" id="description" class="form-control" required>
+               </textarea>
             </div>
-            <div class="w-50 container">
-               <label for="zippostalcode" class="form-label">Zip/Postal Code</label>
+            <div class="prod-right">
+               <label for="servicetype" class="form-label">Service Type</label>
                <br>
-               <input type="text" name="zippostalcode" id="zippostalcode" class="form-control" required>
+               <input type="text" name="servicetype" id="servicetype" class="form-control">
                <br>
-               <label for="stateprovinceregion" class="form-label">State/Province/Region</label>
+               <label for="costprice" class="form-label">Cost Price</label>
                <br>
-               <input type="text" name="stateprovinceregion" id="stateprovinceregion" class="form-control" required>
+               <input type="number" name="costprice" id="costprice" class="form-control" required>
                <br>
-               <label for="country" class="form-label">Country</label>
+               <label for="sellingprice" class="form-label">Selling Price</label>
                <br>
-               <input type="text" name="country" id="country" class="form-control" required>
+               <input type="number" name="sellingprice" id="sellingprice" class="form-control" required>
                <br>
-               <label for="email" class="form-label">Email Address</label>
-               <br>
-               <input type="text" name="email" id="email" class="form-control" required>
-               <br>
-               <label for="contactno" class="form-label">Contact Number</label>
-               <br>
-               <input type="text" name="contactno" id="contactno" class="form-control px-5" required>
-               <br>
-            </div>
-            <div class="w-50 container">
-               <label for="website" class="form-label">Company Website</label>
-               <br>
-               <input type="text" name="website" id="website" class="form-control" required>
-               <br>
-               <label for="contactfname" class="form-label">Contact First Name</label>
-               <br>
-               <input type="text" name="contactfname" id="contactfname" class="form-control" required>
-               <br>
-               <label for="contactlname" class="form-label">Contact Last Name</label>
-               <br>
-               <input type="text" name="contactlname" id="contactlname" class="form-control" required>
-               <br>
-               <label for="contactemail" class="form-label">Contact Email</label>
-               <br>
-               <input type="text" name="contactemail" id="contactemail" class="form-control" required>
-               <br>
-               <br>
-               <div class="d-flex flex-row mt-2">
+               <div class="d-flex flex-row">
                     <button type="submit" class="btn btn-home px-5">Create</button>
                     <a href="{{ route('biz-services', ['id' => $biz->id]) }}" type="button" class="btn btn-danger text-white px-5 page-btn ml-5 btn-ml">Discard</a>
                </div>
-              
-               </div>
-            </div>   
+            </div>
+            </div>
             </fieldset>
            </form>
-        </div>
-    </div>
 </div>
 @endsection
