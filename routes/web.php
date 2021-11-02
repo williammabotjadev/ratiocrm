@@ -65,3 +65,4 @@ Route::get('/customer/{id}', [App\Http\Controllers\Components\CustomerController
 Route::get('/supplier/{id}', [App\Http\Controllers\Components\SupplierController::class, 'supplier'])->name('supplier');
 Route::get('/product/{id}', [App\Http\Controllers\Components\ProductController::class, 'product'])->name('product');
 Route::get('/service/{id}', [App\Http\Controllers\Components\ServiceController::class, 'service'])->name('service');
+Route::get('/employee/{id}', [App\Http\Controllers\Components\EmployeeController::class, 'employee'])->name('employee');
