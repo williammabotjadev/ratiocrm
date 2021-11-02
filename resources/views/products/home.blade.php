@@ -9,9 +9,17 @@
                 <h5 class="blue-text">Overview</h5>
                 <br>
             </div>
-            @if (count($products) < 0)
-            {{ $customers }}
-                @else 
+            @if (count($products) > 0)
+                @foreach($products as $product)
+                        <tr>
+                            <td class="px-5"><h3><strong>{{ $product->name }}</strong></h3></td>
+                            <td class="px-5"><h3><strong>$ {{ $product->selling_price }}</strong></h3></td>
+                            <td class="px-5">
+                                <a href="{{ route('product', ['id' => $product->id]) }}" target="_blank" class="btn btn-home">Open</a>
+                            </td>
+                        </tr>
+                @endforeach
+            @else 
             <h3 class="blue-text mt-5 mb-5">No Product Data Yet</h3>
             @endif
             <br>
