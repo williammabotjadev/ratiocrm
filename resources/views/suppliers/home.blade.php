@@ -6,7 +6,7 @@
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1>{{ $biz->name }}</h1>
-                <h5 class="blue-text">Overview</h5>
+                <h5 class="blue-text">Suppliers</h5>
                 <br>
             </div>
             @if (count($suppliers) > 0)
