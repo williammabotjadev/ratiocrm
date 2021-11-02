@@ -30,9 +30,9 @@
                <br>
                <input type="text" name="servicetype" id="servicetype" class="form-control">
                <br>
-               <label for="costprice" class="form-label">Cost Price</label>
+               <label for="servicecost" class="form-label">Service Cost</label>
                <br>
-               <input type="number" name="costprice" id="costprice" class="form-control" required>
+               <input type="number" name="servicecost" id="servicecost" class="form-control" required>
                <br>
                <label for="sellingprice" class="form-label">Selling Price</label>
                <br>
