@@ -9,16 +9,18 @@
                 <h5 class="blue-text">Suppliers</h5>
                 <br>
             </div>
+            <table>
             @if (count($suppliers) > 0)
                     @foreach($suppliers as $supplier)
                                 <tr>
                                     <td class="px-5"><h3><strong>{{ $supplier->name }}</strong></h3></td>
                                     <td class="px-5"><h3><strong>{{ $supplier->citytown }}</strong></h3></td>
                                     <td class="px-5">
-                                        <a href="{{ route('supplier', ['id' => $supplier->id]) }}" target="_blank" class="btn btn-home">Open</a>
+                                        <a href="{{ route('supplier', ['id' => $supplier->id]) }}" target="_blank" class="btn btn-home">View Supplier</a>
                                     </td>
                                 </tr>
                     @endforeach
+            </table>
             @else 
                 <h3 class="blue-text mt-5 mb-5">No Supplier Data Yet</h3>
             @endif
