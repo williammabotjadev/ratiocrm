@@ -12,7 +12,7 @@
             @if (count($transactions) < 0)
                 {{ $transactions }}
             @else 
-                <h3 class="blue-text mt-5 mb-5">No Customer Data Yet</h3>
+                <h3 class="blue-text mt-5 mb-5">No Transactions Yet</h3>
             @endif
             <br>
                 <a href="{{ route('new-transaction', ['id' => $biz->id]) }}" class="btn btn-home-alt w-25 mb-lg-5">Add Customer</a>
